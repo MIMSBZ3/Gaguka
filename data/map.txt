@@ -16,6 +16,16 @@ system Buin-een
 	asteroids "small metal" 2 2.7
 	asteroids "medium metal" 7 2.7
 	asteroids "large metal" 1 3.909
+	trade Clothing 358
+	trade Electronics 759
+	trade Equipment 700
+	trade Food 480
+	trade "Heavy Metals" 1196
+	trade Industrial 834
+	trade "Luxury Goods" 1519
+	trade Medical 817
+	trade Metal 262
+	trade Plastic 354
 	object
 		sprite star/k0-old
 		period 10
@@ -128,7 +138,18 @@ planet Myersting
 system A-quacua
 	pos -1122.75 -1878.667
 	government "Quarg (Gaguka)"
+	habitable 700
 	link Ha-zoo
+	trade Clothing 315
+	trade Electronics 866
+	trade Equipment 593
+	trade Food 240
+	trade "Heavy Metals" 954
+	trade Industrial 849
+	trade "Luxury Goods" 1117
+	trade Medical 439
+	trade Metal 486
+	trade Plastic 442
 	fleet "Quarg (Gaguka)" 650
 	fleet "Large Quarg (Gaguka)" 1000
 	object
@@ -327,6 +348,16 @@ system Ahh-thu
 	asteroids "small metal" 2 4.301
 	asteroids "large metal" 3 3.491
 	minables titanium 1 4.918
+	trade Clothing 366
+	trade Electronics 768
+	trade Equipment 717
+	trade Food 449
+	trade "Heavy Metals" 1210
+	trade Industrial 836
+	trade "Luxury Goods" 1468
+	trade Medical 818
+	trade Metal 230
+	trade Plastic 375
 	object
 		sprite star/a-giant
 		period 10
@@ -371,6 +402,16 @@ system Ha-zoo
 	asteroids "large metal" 10 1.45
 	minables tungsten 1 2.374
 	minables iron 2 2.924
+	trade Clothing 338
+	trade Electronics 857
+	trade Equipment 559
+	trade Food 245
+	trade "Heavy Metals" 931
+	trade Industrial 861
+	trade "Luxury Goods" 1105
+	trade Medical 499
+	trade Metal 528
+	trade Plastic 465
 	fleet "Quarg (Gaguka)" 500
 	fleet "Large Quarg (Gaguka)" 1200
 	object
@@ -432,6 +473,16 @@ system Horty-ous
 	asteroids "large metal" 2 2.475
 	minables titanium 2 5.502
 	minables copper 5 4.701
+	trade Clothing 175
+	trade Electronics 659
+	trade Equipment 617
+	trade Food 154
+	trade "Heavy Metals" 797
+	trade Industrial 770
+	trade "Luxury Goods" 1007
+	trade Medical 812
+	trade Metal 440
+	trade Plastic 288
 	object
 		sprite star/g3
 		distance 145.092
@@ -490,6 +541,16 @@ system Qua-key
 	minables titanium 7 4.342
 	minables aluminum 8 4.802
 	minables tungsten 13 4.937
+	trade Clothing 170
+	trade Electronics 692
+	trade Equipment 630
+	trade Food 187
+	trade "Heavy Metals" 786
+	trade Industrial 768
+	trade "Luxury Goods" 968
+	trade Medical 830
+	trade Metal 410
+	trade Plastic 312
 	object
 		sprite star/g5-old
 		period 10
@@ -536,6 +597,16 @@ system Rah-ru
 	asteroids "large metal" 14 1.8
 	minables copper 1 1.835
 	minables lead 10 3.189
+	trade Clothing 181
+	trade Electronics 689
+	trade Equipment 639
+	trade Food 208
+	trade "Heavy Metals" 787
+	trade Industrial 779
+	trade "Luxury Goods" 947
+	trade Medical 873
+	trade Metal 488
+	trade Plastic 280
 	object
 		sprite star/l-dwarf
 		distance 112.129
@@ -595,6 +666,16 @@ system Sha-gu
 	asteroids "medium metal" 50 3.057
 	asteroids "large metal" 26 4.638
 	minables lead 53 4.915
+	trade Clothing 144
+	trade Electronics 660
+	trade Equipment 582
+	trade Food 210
+	trade "Heavy Metals" 777
+	trade Industrial 736
+	trade "Luxury Goods" 996
+	trade Medical 862
+	trade Metal 460
+	trade Plastic 317
 	object
 		sprite star/a3
 		period 10
@@ -669,6 +750,16 @@ system Thanel-boo
 	minables gold 4 2.734
 	minables lead 5 4.178
 	minables aluminum 12 3.273
+	trade Clothing 232
+	trade Electronics 682
+	trade Equipment 616
+	trade Food 185
+	trade "Heavy Metals" 792
+	trade Industrial 774
+	trade "Luxury Goods" 960
+	trade Medical 882
+	trade Metal 506
+	trade Plastic 312
 	object
 		sprite star/g3
 		period 10
@@ -733,6 +824,16 @@ system Tout-yhalo
 	minables silicon 4 2.897
 	minables tungsten 4 4.211
 	minables aluminum 5 3.291
+	trade Clothing 364
+	trade Electronics 739
+	trade Equipment 707
+	trade Food 412
+	trade "Heavy Metals" 1144
+	trade Industrial 859
+	trade "Luxury Goods" 1451
+	trade Medical 788
+	trade Metal 219
+	trade Plastic 380
 	object
 		sprite star/m-dwarf
 		period 10
@@ -789,6 +890,16 @@ system Who-ath
 	minables copper 1 2.779
 	minables titanium 5 2.39
 	minables tungsten 19 2.916
+	trade Clothing 215
+	trade Electronics 690
+	trade Equipment 602
+	trade Food 155
+	trade "Heavy Metals" 751
+	trade Industrial 781
+	trade "Luxury Goods" 925
+	trade Medical 836
+	trade Metal 479
+	trade Plastic 309
 	object
 		sprite star/k8
 		period 10
@@ -890,6 +1001,16 @@ system Tug-majug
 	asteroids "medium metal" 8 2.216
 	asteroids "large metal" 19 3.385
 	minables silicon 2 4.772
+	trade Clothing 361
+	trade Electronics 858
+	trade Equipment 444
+	trade Food 289
+	trade "Heavy Metals" 685
+	trade Industrial 552
+	trade "Luxury Goods" 1365
+	trade Medical 678
+	trade Metal 483
+	trade Plastic 518
 	object
 		sprite star/b5
 		distance 206.707
