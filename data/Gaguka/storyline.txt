@@ -1,0 +1,26 @@
+mission "First Contact: Gaguka"
+	name "."
+	description "."
+	landing
+	repeat
+	source
+		government Gaguka
+		not planet Jubint
+	destination Jubint
+	on offer
+		conversation
+			`Upon landing on <origin>, a rhino walks up to you.`
+			choice
+				`	(Shoot it.)`
+					goto shoot
+				`	(Leave the planet.)`
+					goto flee
+				`	(Stay where you are.)`
+					goto stay
+				`	(Step backwards.)`
+#					goto step
+					accept
+			label flee
+			label stay
+			label shoot
+				die
