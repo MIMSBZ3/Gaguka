@@ -121,20 +121,6 @@ system Niun
 		distance 14406
 		period 27665.282
 
-planet Jubint
-	attributes gaguka
-	landscape land/snow2
-	description "To be done."
-	spaceport "To be done."
-	government Gaguka
-
-planet Myersting
-	attributes gaguka
-	landscape land/desert5
-	description "To be done."
-	spaceport "To be done."
-	government Gaguka
-
 system A-quacua
 	pos -1122.75 -1878.667
 	government "Quarg (Gaguka)"
@@ -382,13 +368,6 @@ system Ahh-thu
 		distance 7742
 		period 3065.676
 
-planet Men-qaosh
-	attributes gaguka
-	landscape land/water4
-	description "To be done."
-	spaceport "To be done."
-	government Gaguka
-
 system Ha-zoo
 	pos -1219.75 -1820.667
 	government "Quarg (Gaguka)"
@@ -453,9 +432,6 @@ system Ha-zoo
 		sprite planet/rock20
 		distance 17817
 		period 10702.822
-
-planet Urani
-	landscape land/clouds_03
 
 system Horty-ous
 	pos -1527.75 -2073.167
@@ -575,13 +551,6 @@ system Qua-key
 			distance 263
 			period 161.226
 
-planet Wop-ant
-	attributes gaguka
-	landscape land/moon1
-	description "To be done."
-	spaceport "To be done."
-	government Gaguka
-
 system Rah-ru
 	pos -1461.75 -2041.167
 	government Gaguka
@@ -644,13 +613,6 @@ system Rah-ru
 			sprite planet/dust4-b
 			distance 249
 			period 122.202
-
-planet Van-qoash
-	attributes gaguka
-	landscape land/fog6
-	description "To be done."
-	spaceport "To be done."
-	government Gaguka
 
 system Sha-gu
 	pos -1598.75 -2026.667
@@ -728,13 +690,6 @@ system Sha-gu
 		distance 9040
 		period 5896.213
 
-planet Wer-intoe
-	attributes gaguka
-	landscape land/sea0
-	description "To be done."
-	spaceport "To be done."
-	government Gaguka		
-
 system Thanel-boo
 	pos -1439.75 -1925.167
 	government Gaguka
@@ -800,13 +755,6 @@ system Thanel-boo
 			distance 294
 			period 190.556
 
-planet Jepo
-	attributes gaguka
-	landscape land/forest0
-	description "To be done."
-	spaceport "To be done."
-	government Gaguka
-
 system Tout-yhalo
 	pos -1291.75 -1871.167
 	government Uninhabited
@@ -865,12 +813,6 @@ system Tout-yhalo
 		sprite planet/browndwarf-l
 		distance 7781
 		period 46406.53
-
-planet Yeo-ash
-	attributes gaguka
-	landscape land/sky0
-	description "To be done."
-	government Uninhabited
 
 system Who-ath
 	pos -1496.75 -1959.167
@@ -1037,3 +979,60 @@ system Tug-majug
 		distance 2547
 		period 618.489
 
+planet Urani
+	landscape land/clouds_03
+
+planet Yeo-ash
+	attributes gaguka
+	landscape land/sky0
+	description "To be done."
+	government Uninhabited
+
+planet Jepo
+	attributes gaguka
+	landscape land/forest0
+	description "To be done."
+	spaceport "To be done."
+	government Gaguka
+
+planet Wer-intoe
+	attributes gaguka
+	landscape land/sea0
+	description "To be done."
+	spaceport "To be done."
+	government Gaguka		
+
+planet Van-qoash
+	attributes gaguka
+	landscape land/fog6
+	description "To be done."
+	spaceport "To be done."
+	government Gaguka
+
+planet Wop-ant
+	attributes gaguka
+	landscape land/moon1
+	description "To be done."
+	spaceport "To be done."
+	government Gaguka
+
+planet Men-qaosh
+	attributes gaguka
+	landscape land/water4
+	description "To be done."
+	spaceport "To be done."
+	government Gaguka
+
+planet Jubint
+	attributes gaguka
+	landscape land/snow2
+	description "To be done."
+	spaceport "To be done."
+	government Gaguka
+
+planet Myersting
+	attributes gaguka
+	landscape land/desert5
+	description "To be done."
+	spaceport "To be done."
+	government Gaguka
