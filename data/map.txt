@@ -122,6 +122,7 @@ system Niun
 		period 27665.282
 
 system A-quacua
+	attributes ringworld
 	pos -1122.75 -1878.667
 	government "Quarg (Gaguka)"
 	habitable 700
@@ -318,6 +319,7 @@ planet "Ring of Gasuni"
 	landscape land/station5
 	description None
 	spaceport None
+	government "Quarg (Gaguka)"
 
 system Ahh-thu
 	pos -1313.75 -1955.167
@@ -980,31 +982,33 @@ system Tug-majug
 		period 618.489
 
 planet Urani
-	landscape land/clouds_03
+	landscape land/clouds_09
+	description "To be done."
+	spaceport "To be done."
+	government "Quarg (Gaguka)"
 
 planet Yeo-ash
-	attributes gaguka
-	landscape land/sky0
+	landscape land/rock0
 	description "To be done."
 	government Uninhabited
 
 planet Jepo
 	attributes gaguka
-	landscape land/forest0
+	landscape land/grassland0
 	description "To be done."
 	spaceport "To be done."
 	government Gaguka
 
 planet Wer-intoe
 	attributes gaguka
-	landscape land/sea0
+	landscape land/rock1
 	description "To be done."
 	spaceport "To be done."
 	government Gaguka		
 
 planet Van-qoash
 	attributes gaguka
-	landscape land/fog6
+	landscape land/water21
 	description "To be done."
 	spaceport "To be done."
 	government Gaguka
