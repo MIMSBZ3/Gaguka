@@ -1015,28 +1015,28 @@ planet Van-qoash
 
 planet Wop-ant
 	attributes gaguka
-	landscape land/moon1
+	landscape land/mountain31
 	description "To be done."
 	spaceport "To be done."
 	government Gaguka
 
 planet Men-qaosh
 	attributes gaguka
-	landscape land/water4
+	landscape land/sky12
 	description "To be done."
 	spaceport "To be done."
 	government Gaguka
 
 planet Jubint
 	attributes gaguka
-	landscape land/snow2
+	landscape land/clouds_10
 	description "To be done."
 	spaceport "To be done."
 	government Gaguka
 
 planet Myersting
 	attributes gaguka
-	landscape land/desert5
+	landscape land/ravine0
 	description "To be done."
 	spaceport "To be done."
 	government Gaguka
