@@ -982,13 +982,13 @@ system Tug-majug
 		period 618.489
 
 planet Urani
-	landscape land/clouds_09
+	landscape land/clouds_11
 	description "To be done."
 	spaceport "To be done."
 	government "Quarg (Gaguka)"
 
 planet Yeo-ash
-	landscape land/rock0
+	landscape land/canyon16
 	description "To be done."
 	government Uninhabited
 
@@ -1001,28 +1001,28 @@ planet Jepo
 
 planet Wer-intoe
 	attributes gaguka
-	landscape land/rock1
+	landscape land/hills12
 	description "To be done."
 	spaceport "To be done."
 	government Gaguka		
 
 planet Van-qoash
 	attributes gaguka
-	landscape land/water21
+	landscape land/water23
 	description "To be done."
 	spaceport "To be done."
 	government Gaguka
 
 planet Wop-ant
 	attributes gaguka
-	landscape land/mountain31
+	landscape land/mountain34
 	description "To be done."
 	spaceport "To be done."
 	government Gaguka
 
 planet Men-qaosh
 	attributes gaguka
-	landscape land/sky12
+	landscape land/sky13
 	description "To be done."
 	spaceport "To be done."
 	government Gaguka
@@ -1036,7 +1036,7 @@ planet Jubint
 
 planet Myersting
 	attributes gaguka
-	landscape land/ravine0
+	landscape land/hills13
 	description "To be done."
 	spaceport "To be done."
 	government Gaguka
