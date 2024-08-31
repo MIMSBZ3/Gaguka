@@ -1,8 +1,7 @@
 mission "First Contact: Gaguka"
-	name "."
+	name "Qoasly to <destination>."
 	description "Take Qoasly to <destination> by <deadline>. He will pay you <payment>."
 	landing
-	repeat
 	deadline
 	deadline 1
 	source
@@ -11,7 +10,7 @@ mission "First Contact: Gaguka"
 	destination Jubint
 	on offer
 		conversation
-			`Upon landing on <origin>, a rhino walks up to you. You go to greet it, but then have second thoughts.`
+			`Upon landing on <origin>, a rhino walks up to you. You feel a bit uneasy.`
 			choice
 				`	(Shoot it.)`
 					goto shoot
@@ -27,7 +26,7 @@ mission "First Contact: Gaguka"
 			`	As you run back to your ship and prepare for takeoff, you hear the rhino say, "Go now, as opposed to later."`
 				flee
 			label stay
-			`	The rhino says, "Can you take me to <destination>?"`
+			`	The rhino asks, "Can you take me to <destination>?"`
 			choice
 				`	"Okay. My name is <first> <last> of the <ship>."`
 					goto ok
@@ -48,7 +47,7 @@ mission "First Contact: Gaguka"
 				`	(Step backwards.)`
 					goto step1
 			label step1
-			`	"I said, stay here!" says the rhino. "Why do you not trust me, Qoasly of the Gaguka?`
+			`	"I said, stay here!" thunders the rhino. "Why do you not trust me, Qoasly of the Gaguka?`
 			choice
 				`	(Leave the planet.)`
 					goto flee
@@ -75,9 +74,10 @@ mission "First Contact: Gaguka"
 				"reputation: Gaguka" = -1000
 				"reputation: Quarg (Gaguka)" = -1000
 			`	You walk back to your ship and prepare for takeoff. You hear the rhino say, "I warn you now that you're not the friend of the Gaguka."`
-				decline
+				flee
 	on accept
-		log "People" "Qoasly" `Hello tester.`
+		log "People" "Qoasly" `Qoasly is a rhino of high importance, so it seems, who you happened to meet on <origin>.`
+		log "Factions" "Gaguka" `The Gaguka are a species way up North of human space. Nobody knows how they happen to be here, except maybe the Quarg and the Drak.`
 	on complete
 		payment 10000
 		conversation
@@ -102,6 +102,77 @@ mission "First Contact: Gaguka"
 					goto okayfine
 			label okayfine
 			`	"Fine. Goodbye."`
-			label reallyend			
+			label reallyend
 
 event "Qoasly wants transport 1"
+
+mission "Go to Qoasly"
+	name "Go to <destination>."
+	description "Go pick up Qoasly who is on Jubint, for unknown reasons."
+	landing
+	deadline
+	deadline 1
+	source
+		government Gaguka
+		not planet Jubint
+		has "event: Qoasly wants transport 1"
+	destination Jubint
+	on offer
+		dialog `You get an incoming call from <destination>. "<first> <last>!" says Qoasly. "Can you come here to <destination>?"`
+
+mission "Transport Qoasly"
+	name "."
+	description "."
+	landing
+	repeat
+	source Jubint
+		has "Go to Qoasly: done"
+		not "Transport Qoasly already there: done"
+	destination Wop-ant
+	on offer
+		conversation
+	on accept
+	on complete
+		payment 10000
+		conversation
+		`	`
+
+mission "Transport Qoasly already there"
+	name "."
+	description "."
+	repeat
+	source Jubint
+		not "Go to Qoasly: done"
+		has "event: Qoasly wants transport 1"
+	destination Wop-ant
+	on offer
+		conversation
+			`You run into Qoasly and another rhino while walking through the spaceport. "Captain <last>," says Qoasly. "Can you take me and Mushcosh to <destination>?"`
+			choice
+				`	"Sure."`
+					goto okay
+				`	"I assume that other rhino is Mushcosh?"`
+					goto ask
+				`	"Not until you properly introduce us."`
+					goto decline
+			label okay
+			`	"Great! I've had trouble get a flight for me and Mushcosh. Thanks."`
+				accept
+			label ask
+			`	"Correct. So?"`
+			choice
+				`	"Yes."`
+					goto okay
+				`	"No!"`
+			label decline
+			action
+				"reputation: Gaguka" = -1000
+				"reputation: Quarg (Gaguka)" = -1000
+			`	"That just got you into trouble." Qoasly says. Upon hearing this, all the other rhinos at the spaceport start a stampede.`
+				die
+			
+	on accept
+	on complete
+		payment 10000
+		conversation
+		`	`
