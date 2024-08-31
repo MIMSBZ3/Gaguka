@@ -168,7 +168,7 @@ mission "Transport Qoasly already there"
 			action
 				"reputation: Gaguka" = -1000
 				"reputation: Quarg (Gaguka)" = -1000
-			`	"That just got you into trouble." Qoasly says. Upon hearing this, all the other rhinos at the spaceport start a stampede.`
+			`	"That just got you into trouble." Qoasly says, with distaste. Upon hearing this, all the other rhinos at the spaceport start a stampede.`
 				die
 			
 	on accept
