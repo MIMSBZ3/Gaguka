@@ -107,14 +107,15 @@ mission "First Contact: Gaguka"
 event "Qoasly wants transport 1"
 
 mission "Go to Qoasly"
-	name "Go to <destination>."
-	description "Go pick up Qoasly who is on Jubint, for unknown reasons."
+	name "Go to <destination>"
+	description "Go pick up Qoasly, who is on <destination>, for unknown reasons."
 	landing
 	deadline
 	deadline 1
 	source
 		government Gaguka
 		not planet Jubint
+	to offer
 		has "event: Qoasly wants transport 1"
 	destination Jubint
 	on offer
@@ -124,24 +125,26 @@ mission "Transport Qoasly"
 	name "."
 	description "."
 	landing
-	repeat
 	source Jubint
+	to offer
 		has "Go to Qoasly: done"
 		not "Transport Qoasly already there: done"
 	destination Wop-ant
 	on offer
 		conversation
+			`f`
+				accept
 	on accept
 	on complete
 		payment 10000
 		conversation
-		`	`
+			`In the airspace of <destination>, Qoasly and Mushcosh, after paying you <payment>, walk off your ship. As soon as they do, a call comes in. "Relax <first>, just in case you didn't know this, we have little inflatable parachutes attached to our backs." You look out of the window, and see this is true.`
 
 mission "Transport Qoasly already there"
 	name "."
 	description "."
-	repeat
 	source Jubint
+	to offer
 		not "Go to Qoasly: done"
 		has "event: Qoasly wants transport 1"
 	destination Wop-ant
@@ -159,20 +162,15 @@ mission "Transport Qoasly already there"
 			`	"Great! I've had trouble get a flight for me and Mushcosh. Thanks."`
 				accept
 			label ask
-			`	"Correct. So?"`
+			`	"Correct. Well?"`
 			choice
 				`	"Yes."`
 					goto okay
-				`	"No!"`
+				`	"No, why should I?"`
 			label decline
-			action
-				"reputation: Gaguka" = -1000
-				"reputation: Quarg (Gaguka)" = -1000
-			`	"That just got you into trouble." Qoasly says, with distaste. Upon hearing this, all the other rhinos at the spaceport start a stampede.`
+			`	"That just got you into trouble," Qoasly distastefully says. Upon hearing this, all the other rhinos at the spaceport start a stampede.`
 				die
-			
-	on accept
 	on complete
 		payment 10000
 		conversation
-		`	`
+			`In the airspace of <destination>, Qoasly and Mushcosh, after paying you <payment>, walk off your ship. As soon as they do, a call comes in. "Relax <first>, just in case you didn't know this, we have little inflatable parachutes attached to our backs." You look out of the window, and see this is true.`
