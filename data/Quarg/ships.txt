@@ -1,0 +1,39 @@
+ship "Llama"
+	sprite "ship/llama"
+	thumbnail "thumbnail/llama"
+	attributes
+		category "Fighter"
+		cost 725000
+		"shields" 2000
+		"hull" 1100
+		"automaton" 1
+		"bunks" 1
+		"mass" 100
+		"drag" .59
+		"diba gun ports" -1
+		"heat dissipation" .27
+		"outfit space" 0
+		"weapon capacity" 0
+		"thrust" 10
+		"turn" 60
+		"shield generation" .05
+		"cargo space" 100 # maybe should be lowered?
+		licenses
+			Diba
+		weapon
+			"blast radius" 12
+			"shield damage" 120
+			"hull damage" 60
+			"hit force" 180
+	outfits
+		"Diba Laser Turret"
+	turret 0 -21 "Diba Laser Turret"
+		angle 0
+		arc -5 5
+	engine 3 36.5
+	leak "leak" 70 50
+	leak "flame" 50 80
+	explode "tiny explosion" 15
+	explode "small explosion" 5
+	description "The Diba fighter. It is not very powerful for its size, but it has a goodly amount of shields and hull, plus a large amount of cargo space."
+

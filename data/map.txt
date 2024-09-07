@@ -122,9 +122,9 @@ system Niun
 		period 27665.282
 
 system A-quacua
-	attributes ringworld
 	pos -1122.75 -1878.667
 	government "Quarg (Gaguka)"
+	attributes ringworld
 	habitable 700
 	link Ha-zoo
 	trade Clothing 315
@@ -925,7 +925,6 @@ system V-2189
 	add link WN-3634
 
 planet "Gaguka Wormhole"
-	wormhole "Gaguka Wormhole"
 
 wormhole "Gaguka Wormhole"
 	color 0.706 0.208 0.208
@@ -1004,7 +1003,7 @@ planet Wer-intoe
 	landscape land/hills12
 	description "To be done."
 	spaceport "To be done."
-	government Gaguka		
+	government Gaguka
 
 planet Van-qoash
 	attributes gaguka
@@ -1040,3 +1039,11 @@ planet Myersting
 	description "To be done."
 	spaceport "To be done."
 	government Gaguka
+
+system Ren-tivb
+	pos -1121 -2001
+
+system Trab-hak
+	pos -1207 -2032
+	government Tem-tehy
+

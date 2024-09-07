@@ -3,8 +3,8 @@ government Gaguka
 	color 0.706 0.208 0.208
 
 government "Quarg (Gaguka)"
+	"display name" Quarg
 	color 0.878 0.769 0
-	"display name" "Quarg"
 	"player reputation" 1
 	"attitude toward"
 		Quarg 1
@@ -14,4 +14,8 @@ government "Quarg (Gaguka)"
 	"death sentence" "quarg imprisonment"
 	"hostile hail" "hostile quarg"
 	"hostile disabled hail" "hostile quarg"
+
+government Tem-tehy
+	swizzle 23
+	color 0.482 0.047 0.18
 

@@ -1,0 +1,21 @@
+ship "Giraffe"
+	sprite "ship/charger"
+	thumbnail "thumbnail/charger"
+	attributes
+		category "Heavy Warship"
+		cost 32000000
+		"shields" 700000
+		"hull" 360000
+		"bunks" 365
+		"mass" 1000
+		"drag" 1.59
+		"heat dissipation" .27
+		"outfit space" 1800
+		"weapon capacity" 980
+		"cargo space" 1000
+		licenses
+			"Gaguka Offical"
+	outfits
+	explode "tiny explosion" 60
+	explode "large explosion" 120
+	description "The Giraffe has recently been made, ever since the war with the Tem-tehy has started."
