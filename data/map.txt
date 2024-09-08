@@ -918,6 +918,7 @@ system WN-3634
 		distance 13704
 		period 18149.974
 
+
 system U-5188
 	add link WN-3634
 
@@ -925,6 +926,7 @@ system V-2189
 	add link WN-3634
 
 planet "Gaguka Wormhole"
+	wormhole "Gaguka Wormhole"
 
 wormhole "Gaguka Wormhole"
 	color 0.706 0.208 0.208
