@@ -4,8 +4,8 @@ ship "Giraffe"
 	attributes
 		category "Heavy Warship"
 		cost 32000000
-		"shields" 700000
-		"hull" 360000
+		"shields" 7000000
+		"hull" 3600000
 		"bunks" 365
 		"mass" 1000
 		"drag" 1.59
@@ -19,3 +19,23 @@ ship "Giraffe"
 	explode "tiny explosion" 60
 	explode "large explosion" 120
 	description "The Giraffe has recently been made, ever since the war with the Tem-tehy has started."
+
+ship "Elephant"
+	sprite "ship/to"
+	thumbnail "thumbnail/to"
+	attributes
+		category "Heavy Freighter"
+		cost 15000000
+		"shields" 100000
+		"hull" 3000000
+		"bunks" 154
+		"mass" 100
+		"drag" .99
+		"heat dissipation" .27
+		"outfit space" 900
+		"weapon capacity" 550
+		"cargo space" 1500
+	outfits
+	explode "tiny explosion" 6
+	explode "large explosion" 12
+	description "The Elephant has been the longest made ship, going back to the invention of the hyperdrive."

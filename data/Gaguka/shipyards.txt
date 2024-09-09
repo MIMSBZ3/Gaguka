@@ -1,0 +1,10 @@
+shipyard "Gaguka Ships"
+	"Giraffe"
+	"Elephant"
+
+shipyard "Elephant"
+	"Elephant"
+
+shipyard "Giraffe"
+	"Giraffe"
+
