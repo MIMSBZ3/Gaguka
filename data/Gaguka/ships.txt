@@ -1,6 +1,7 @@
 ship "Giraffe"
-	sprite "ship/charger"
-	thumbnail "thumbnail/charger"
+	swizzle 0
+	sprite "ship/charge"
+	thumbnail "thumbnail/charge"
 	attributes
 		category "Heavy Warship"
 		cost 32000000
@@ -13,16 +14,21 @@ ship "Giraffe"
 		"outfit space" 1800
 		"weapon capacity" 980
 		"cargo space" 1000
-		licenses
-			"Gaguka Offical"
+		"engine space" 1000
+		#licenses
+		#	"Gaguka Offical"
 	outfits
+		Hyperdrive
+		"X2700 Ion Thruster"
+		"X2200 Ion Steering"
 	explode "tiny explosion" 60
 	explode "large explosion" 120
 	description "The Giraffe has recently been made, ever since the war with the Tem-tehy has started."
 
 ship "Elephant"
-	sprite "ship/to"
-	thumbnail "thumbnail/to"
+	swizzle 0
+	sprite "ship/charged"
+	thumbnail "thumbnail/charged"
 	attributes
 		category "Heavy Freighter"
 		cost 15000000
@@ -35,7 +41,11 @@ ship "Elephant"
 		"outfit space" 900
 		"weapon capacity" 550
 		"cargo space" 1500
+		"engine capacity" 1000
 	outfits
+		Hyperdrive
+		"X2700 Ion Thruster"
+		"X2200 Ion Steering"
 	explode "tiny explosion" 6
 	explode "large explosion" 12
 	description "The Elephant has been the longest made ship, going back to the invention of the hyperdrive."

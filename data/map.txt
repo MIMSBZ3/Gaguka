@@ -999,6 +999,7 @@ planet Jepo
 	spaceport "To be done."
 	government Gaguka
 	shipyard "Gaguka Ships"
+	outfitter "Gaguka Basics"
 
 planet Wer-intoe
 	attributes gaguka
@@ -1007,6 +1008,7 @@ planet Wer-intoe
 	spaceport "To be done."
 	government Gaguka
 	shipyard "Gaguka Ships"
+	outfitter "Gaguka Basics"
 
 planet Van-qoash
 	attributes gaguka
@@ -1015,6 +1017,7 @@ planet Van-qoash
 	spaceport "To be done."
 	government Gaguka
 	shipyard "Gaguka Ships"
+	outfitter "Gaguka Basics"
 
 planet Wop-ant
 	attributes gaguka
@@ -1023,6 +1026,7 @@ planet Wop-ant
 	spaceport "To be done."
 	government Gaguka
 	shipyard "Gaguka Ships"
+	outfitter "Gaguka Basics"
 
 planet Men-qaosh
 	attributes gaguka
@@ -1031,6 +1035,7 @@ planet Men-qaosh
 	spaceport "To be done."
 	government Gaguka
 	shipyard "Gaguka Ships"
+	outfitter "Gaguka Basics"
 
 planet Jubint
 	attributes gaguka
@@ -1039,6 +1044,7 @@ planet Jubint
 	spaceport "To be done."
 	government Gaguka
 	shipyard "Gaguka Ships"
+	outfitter "Gaguka Basics"
 
 planet Myersting
 	attributes gaguka
@@ -1047,6 +1053,7 @@ planet Myersting
 	spaceport "To be done."
 	government Gaguka
 	shipyard "Gaguka Ships"
+	outfitter "Gaguka Basics"
 
 system Ren-tivb
 	pos -1121 -2001

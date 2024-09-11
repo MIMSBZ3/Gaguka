@@ -1,0 +1,2 @@
+outfitter "Gaguka Basics"
+	Hyperdrive
