@@ -44,8 +44,24 @@ ship "Elephant"
 		"engine capacity" 1000
 	outfits
 		Hyperdrive
-		"X2700 Ion Thruster"
-		"X2200 Ion Steering"
+		"A860 Atomic Thruster"
+		"A865 Atomic Steering"
 	explode "tiny explosion" 6
 	explode "large explosion" 12
+	engine 118 289
+	engine -118 289
+	gun -77.5 -283
+	gun 77.5 -283
+	turret -25.5 -42
+	turret -30.5 -11
+	turret 25.5 -42
+	turret 30.5 -11
+	`AR120 Reverse Thruster` -17.5 -319
+	`AR120 Reverse Thruster` 17.5 -319
+	bay Fighter -60 -81
+	bay Fighter -67 -60
+	bay Fighter -71.5 -39
+	bay Fighter 60 -81
+	bay Fighter 67 -60
+	bay Fighter 71.5 -39
 	description "The Elephant has been the longest made ship, going back to the invention of the hyperdrive."
