@@ -11,18 +11,29 @@ ship "Giraffe"
 		"mass" 1000
 		"drag" 1.59
 		"heat dissipation" .27
+		"fuel capacity" 900
 		"outfit space" 1800
-		"weapon capacity" 980
-		"cargo space" 1000
-		"engine space" 1000
+		"weapon capacity" 9800
+		"cargo space" 10000
+		"engine capacity" 219
 		#licenses
 		#	"Gaguka Offical"
 	outfits
 		Hyperdrive
-		"X2700 Ion Thruster"
-		"X2200 Ion Steering"
+		"A860 Atomic Thruster"
+		"A865 Atomic Steering"
+		"AR120 Reverse Thruster" 2
 	explode "tiny explosion" 60
 	explode "large explosion" 120
+	turret 15 -683
+	turret -115.5 -555
+	turret 144.5 -553.5
+	gun -106.5 -587.5
+	gun 136 -585
+	engine -106.5 688
+	`reverse engine` -106.5 688
+	engine 142.5 688.5
+	`reverse engine` 142.5 688.5
 	description "The Giraffe has recently been made, ever since the war with the Tem-tehy has started."
 
 ship "Elephant"
@@ -38,14 +49,16 @@ ship "Elephant"
 		"mass" 100
 		"drag" .99
 		"heat dissipation" .27
+		"fuel capacity" 600
 		"outfit space" 900
-		"weapon capacity" 550
-		"cargo space" 1500
+		"weapon capacity" 5500
+		"cargo space" 15000
 		"engine capacity" 1000
 	outfits
 		Hyperdrive
 		"A860 Atomic Thruster"
 		"A865 Atomic Steering"
+		"AR120 Reverse Thruster" 2
 	explode "tiny explosion" 6
 	explode "large explosion" 12
 	engine 118 289
@@ -56,8 +69,8 @@ ship "Elephant"
 	turret -30.5 -11
 	turret 25.5 -42
 	turret 30.5 -11
-	`AR120 Reverse Thruster` -17.5 -319
-	`AR120 Reverse Thruster` 17.5 -319
+	`reverse engine` -17.5 -319
+	`reverse engine` 17.5 -319
 	bay Fighter -60 -81
 	bay Fighter -67 -60
 	bay Fighter -71.5 -39
