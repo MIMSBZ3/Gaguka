@@ -930,9 +930,65 @@ system WN-3634
 
 system U-5188
 	add link WN-3634
+	object
+		sprite star/k5
+		period 10
+	object
+		sprite planet/dust5
+		distance 570
+		period 264.044
+	object
+		sprite planet/gas0
+		distance 1679
+		period 1334.87
+		object
+			sprite planet/rock3-b
+			distance 581
+			period 529.37
 
 system V-2189
 	add link WN-3634
+	object
+		sprite star/o0
+		distance 77.281
+		period 73.781
+	object
+		sprite star/a0
+		distance 157.71
+		period 73.78
+		offset 180
+	object
+		sprite planet/gas16-b
+		distance 1080
+		period 107.719
+		object
+			sprite planet/dust7-b
+			distance 212
+			period 116.68
+		object
+			sprite planet/callisto-b
+			distance 350
+			period 171.36
+	object
+		sprite planet/io
+		distance 2812
+		period 452.567
+	object
+		sprite planet/gas2-hot
+		distance 4482.88
+		period 910.952
+		object
+			sprite planet/dust3
+			distance 195
+			period 102.93
+		object
+			sprite planet/ice0-b
+			distance 327
+			period 223.52
+		object
+			sprite planet/ice7-b
+			distance 508
+			period 299.64
 
 planet "Gaguka Wormhole"
 	wormhole "Gaguka Wormhole"
@@ -1055,7 +1111,7 @@ planet Jubint
 	government Gaguka
 	shipyard "Gaguka Ships"
 	outfitter "Gaguka Basics"
-
+Minkan-wag-onhe
 planet Myersting
 	attributes gaguka
 	landscape land/hills13
@@ -1065,15 +1121,199 @@ planet Myersting
 	shipyard "Gaguka Ships"
 	outfitter "Gaguka Basics"
 
+planet Minkan-wag-onhe
+	attributes tem-tehy
+	landscape land/wilderness1
+	description "To be done."
+	spaceport "To be done."
+	government Gaguka
+	shipyard "Gaguka Ships"
+	outfitter "Gaguka Basics"
+
+planet Ma-chu-ta-ta-te
+	attributes tem-tehy
+	landscape land/wilderness0
+	description "To be done."
+	spaceport "To be done."
+	government Gaguka
+	shipyard "Gaguka Ships"
+	outfitter "Gaguka Basics"
+
 system Ren-tivb
 	pos -1121 -2001
 	government Tem-tehy
+	habitable 1498.541
+	belt 1849 4
+	belt 2210 7
+	belt 2214 7
+	link Trab-hak
+	asteroids "medium rock" 9 5.15
+	asteroids "large rock" 1 3.619
+	asteroids "small metal" 1 4.246
+	asteroids "medium metal" 7 4.524
+	asteroids "large metal" 16 4.106
+	minables lead 6 7.111
+	trade Clothing 361
+	trade Electronics 858
+	trade Equipment 444
+	trade Food 289
+	trade "Heavy Metals" 685
+	trade Industrial 552
+	trade "Luxury Goods" 1365
+	trade Medical 678
+	trade Metal 483
+	trade Plastic 518
+	object
+		sprite star/o-dwarf
+		distance 99.681
+		period 47.923
+		offset 180
+	object
+		sprite star/g3
+		distance 8.319
+		period 47.923
+	object
+		sprite planet/rogue-radiating
+		distance 285
+		period 49.716
+	object
+		sprite planet/gas7-b
+		distance 1062
+		period 357.612
+		object Minkan-wag-onhe
+			sprite planet/callisto-b
+			distance 268
+			period 114.821
+		object
+			sprite planet/dust3-b
+			distance 436
+			period 344.136
+	object
+		sprite planet/neptune-b
+		distance 2359
+		period 1183.907
+		object
+			sprite planet/miranda
+			distance 245
+			period 181.41
+		object
+			sprite planet/ice7-b
+			distance 405
+			period 213.305
+	object
+		sprite planet/browndwarf-t
+		distance 3438
+		period 2082.977
+		object
+			sprite planet/rock17
+			distance 280
+			period 288.557
+	object
+		sprite planet/gas0
+		distance 5811
+		period 4577.222
+		object
+			sprite planet/dust0-b
+			distance 302
+			period 323.225
 
 system Trab-hak
 	pos -1207 -2032
 	government Tem-tehy
+	habitable 7900
+	belt 1512
+	link Ren-tivb
+	asteroids "medium rock" 77 3.263
+	asteroids "large rock" 2 4.234
+	asteroids "small metal" 7 4.145
+	asteroids "large metal" 25 3.969
+	minables titanium 12 5.764
+	trade Clothing 361
+	trade Electronics 858
+	trade Equipment 444
+	trade Food 289
+	trade "Heavy Metals" 685
+	trade Industrial 552
+	trade "Luxury Goods" 1365
+	trade Medical 678
+	trade Metal 483
+	trade Plastic 518
+	object
+		sprite star/a-giant
+		period 10
+	object
+		sprite planet/ocean3-b
+		distance 555
+		period 58.842
+		object
+			sprite planet/dust1
+			distance 184
+			period 77.626
+	object
+		sprite planet/gas1
+		distance 1597
+		period 287.213
+		object
+			sprite planet/ice8-b
+			distance 491
+			period 411.266
+	object Ma-chu-ta-ta-te
+		sprite planet/gas9-b
+		distance 3888.997
+		period 583.258
+	object
+		sprite planet/uranus-b
+		distance 5812
+		period 1994.045
+		object
+			sprite planet/desert4-b
+			distance 249
+			period 185.871
+		object
+			sprite planet/rhea
+			distance 357
+			period 209.788
+		object
+			sprite planet/ice0
+			distance 474
+			period 390.093
 
 system Tisnroba
 	hidden
 	pos -1270.5 -2015.667
 	government Uninhabited
+	habitable 3400
+	belt 1925 7
+	asteroids "small rock" 6 6.132
+	asteroids "medium rock" 25 8.148
+	asteroids "large rock" 4 6.048
+	asteroids "small metal" 2 6.216
+	asteroids "medium metal" 19 4.2
+	asteroids "large metal" 1 6.3
+	minables iron 1 8.851
+	minables lead 4 6.901
+	minables aluminum 12 11.196
+	object
+		sprite star/a3
+		period 10
+	object
+		sprite planet/forest6
+		distance 393
+		period 53.445
+	object
+		sprite planet/miranda-b
+		distance 933
+		period 195.498
+	object
+		sprite planet/lava0
+		distance 1683.319
+		period 395.343
+	object
+		sprite planet/browndwarf-l-rogue
+		distance 3699
+		period 1543.288
+		object
+			sprite planet/dust0-b
+			distance 279
+			period 287.012
+
