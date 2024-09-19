@@ -8,3 +8,8 @@ shipyard "Elephant"
 shipyard "Giraffe"
 	"Giraffe"
 
+shipyard "Lion"
+	"Lion"
+
+shipyard "Tem-tehy Ships"
+	"Lion"

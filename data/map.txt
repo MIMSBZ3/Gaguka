@@ -1111,7 +1111,7 @@ planet Jubint
 	government Gaguka
 	shipyard "Gaguka Ships"
 	outfitter "Gaguka Basics"
-Minkan-wag-onhe
+
 planet Myersting
 	attributes gaguka
 	landscape land/hills13
@@ -1127,7 +1127,7 @@ planet Minkan-wag-onhe
 	description "To be done."
 	spaceport "To be done."
 	government Gaguka
-	shipyard "Gaguka Ships"
+	shipyard "Tem-tehy Ships"
 	outfitter "Gaguka Basics"
 
 planet Ma-chu-ta-ta-te
@@ -1136,7 +1136,7 @@ planet Ma-chu-ta-ta-te
 	description "To be done."
 	spaceport "To be done."
 	government Gaguka
-	shipyard "Gaguka Ships"
+	shipyard "Tem-tehy Ships"
 	outfitter "Gaguka Basics"
 
 system Ren-tivb
