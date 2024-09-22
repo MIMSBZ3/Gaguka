@@ -97,6 +97,7 @@ ship "Lion"
 		"weapon capacity" 5500
 		"cargo space" 15000
 		"engine capacity" 1000
+		"ramscoop" 1
 	outfits
 		Hyperdrive
 		"A860 Atomic Thruster"

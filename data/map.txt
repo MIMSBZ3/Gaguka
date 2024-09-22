@@ -1119,6 +1119,7 @@ planet Myersting
 	spaceport "To be done."
 	government Gaguka
 	shipyard "Gaguka Ships"
+	shipyard "Tem-tehy Ships"
 	outfitter "Gaguka Basics"
 
 planet Minkan-wag-onhe
