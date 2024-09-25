@@ -11,5 +11,9 @@ shipyard "Giraffe"
 shipyard "Lion"
 	"Lion"
 
+shipyard "Hyena"
+	"Hyena"
+
 shipyard "Tem-tehy Ships"
 	"Lion"
+	"Hyena"
