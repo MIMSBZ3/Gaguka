@@ -137,12 +137,10 @@ mission "Transport Qoasly"
 	on accept
 	on complete
 		payment 10000
-		conversation
-			`In the airspace of <destination>, Qoasly and Mushcosh, after paying you <payment>, walk off your ship. As soon as they do, a call comes in. "Relax <first>, just in case you didn't know this, we have little inflatable parachutes attached to our backs." You look out of the window, and see this is true.`
 
 mission "Transport Qoasly already there"
-	name "."
-	description "."
+	name "Take Qoasly and Mushcosh to <destination>."
+	description "Qoasly and Mushcosh want to go to <destination> for matters of high importance."
 	source Jubint
 	to offer
 		not "Go to Qoasly: done"
@@ -150,7 +148,7 @@ mission "Transport Qoasly already there"
 	destination Wop-ant
 	on offer
 		conversation
-			`You run into Qoasly and another rhino while walking through the spaceport. "Captain <last>," says Qoasly. "Can you take me and Mushcosh to <destination>?"`
+			`You run into Qoasly and another rhino while walking through the spaceport. "Captain <last>," says Qoasly. "Can you take me and Mushcosh to <destination>? I have a meeting of great importance!"`
 			choice
 				`	"Sure."`
 					goto okay
@@ -168,9 +166,7 @@ mission "Transport Qoasly already there"
 					goto okay
 				`	"No, why should I?"`
 			label decline
-			`	"That just got you into trouble," Qoasly distastefully says. Upon hearing this, all the other rhinos at the spaceport start a stampede.`
+			`	"That just got you into trouble. Don't ask those sorts of questions!" Qoasly distastefully says. Upon hearing this, all the other rhinos at the spaceport start a stampede.`
 				die
 	on complete
 		payment 10000
-		conversation
-			`In the airspace of <destination>, Qoasly and Mushcosh, after paying you <payment>, walk off your ship. As soon as they do, a call comes in. "Relax <first>, just in case you didn't know this, we have little inflatable parachutes attached to our backs." You look out of the window, and see this is true.`
