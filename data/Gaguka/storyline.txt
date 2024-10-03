@@ -122,8 +122,8 @@ mission "Go to Qoasly"
 		dialog `You get an incoming call from <destination>. "<first> <last>!" says Qoasly. "Can you come here to <destination>?"`
 
 mission "Transport Qoasly"
-	name "."
-	description "."
+	name "Take Qoasly and Mushcosh to <destination>."
+	description "Qoasly and Mushcosh want to go to <destination> for matters of high importance."
 	landing
 	source Jubint
 	to offer
@@ -132,11 +132,46 @@ mission "Transport Qoasly"
 	destination Wop-ant
 	on offer
 		conversation
-			`f`
+			`When you land on <origin>, Qoasly and another rhino walk up to you. You greet Qoasly and the other rhino. "Captain <last>," says Qoasly. "Can you take me and Mushcosh to <destination>? I have a meeting of great importance!"`
+			choice
+				`	"I would be glad to!"`
+					goto glad
+				`	"Well, I guess so, if you pay me <payment>."`
+					goto sad
+				label glad
+				`	"Thank you <last>, I've had trouble getting a flight." Qoasly says`
+					goto end
+				label sad
+				action
+					"reputation: Gaguka" = 0
+				`	"Okay, but you have been rather rude." says Qoasly`
+				event "no planet" 0
+				label end
 				accept
-	on accept
 	on complete
-		payment 10000
+		payment 1000000
+
+event "no planet"
+
+mission "Mammon Payment"
+	landing
+	invisible
+	to offer
+		random < 10
+		or
+			has "Sheragi Archaeology: Epilogue: done"
+			has "event: mammon impatient"
+		has "paid mammon"
+		"credits" >= 12000000
+
+	on offer
+		restriction Jubint
+		restriction Jubint
+		restriction Jubint
+		restriction Jubint
+		restriction Jubint
+		restriction Jubint
+		restriction Jubint
 
 mission "Transport Qoasly already there"
 	name "Take Qoasly and Mushcosh to <destination>."
@@ -169,4 +204,4 @@ mission "Transport Qoasly already there"
 			`	"That just got you into trouble. Don't ask those sorts of questions!" Qoasly distastefully says. Upon hearing this, all the other rhinos at the spaceport start a stampede.`
 				die
 	on complete
-		payment 10000
+		payment 1000000
