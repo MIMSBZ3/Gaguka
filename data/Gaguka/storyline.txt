@@ -138,40 +138,17 @@ mission "Transport Qoasly"
 					goto glad
 				`	"Well, I guess so, if you pay me <payment>."`
 					goto sad
-				label glad
-				`	"Thank you <last>, I've had trouble getting a flight." Qoasly says`
-					goto end
-				label sad
-				action
-					"reputation: Gaguka" = 0
-				`	"Okay, but you have been rather rude." says Qoasly`
-				event "no planet" 0
-				label end
-				accept
+			label glad
+			`	"Thank you <last>, I've had trouble getting a flight." Qoasly says`
+				goto end
+			label sad
+			action
+				"reputation: Gaguka" = 0
+			`	"Okay, but you have been rather rude." says Qoasly`
+			label end
+		accept
 	on complete
 		payment 1000000
-
-event "no planet"
-
-mission "Mammon Payment"
-	landing
-	invisible
-	to offer
-		random < 10
-		or
-			has "Sheragi Archaeology: Epilogue: done"
-			has "event: mammon impatient"
-		has "paid mammon"
-		"credits" >= 12000000
-
-	on offer
-		restriction Jubint
-		restriction Jubint
-		restriction Jubint
-		restriction Jubint
-		restriction Jubint
-		restriction Jubint
-		restriction Jubint
 
 mission "Transport Qoasly already there"
 	name "Take Qoasly and Mushcosh to <destination>."

@@ -14,11 +14,11 @@ start "Gaguka"
 	planet "Jubint"
 	conversation "blank"
 	account
-		credits 596000000000000
-		score 800
+		credits 59600000000000000000000000
+		score 8000000000000
 	set "license: Pilot's"
 	ship "Palavret"
-		sprite "ship/raider"
+		sprite "ship/heron"
 		thumbnail "thumbnail/raider"
 		name "Tester"
 		attributes

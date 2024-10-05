@@ -1066,6 +1066,7 @@ planet Jepo
 	government Gaguka
 	shipyard "Gaguka Ships"
 	outfitter "Gaguka Basics"
+	"required reputation" 1
 
 planet Wer-intoe
 	attributes gaguka
@@ -1075,6 +1076,7 @@ planet Wer-intoe
 	government Gaguka
 	shipyard "Gaguka Ships"
 	outfitter "Gaguka Basics"
+	"required reputation" 1
 
 planet Van-qoash
 	attributes gaguka
@@ -1084,6 +1086,7 @@ planet Van-qoash
 	government Gaguka
 	shipyard "Gaguka Ships"
 	outfitter "Gaguka Basics"
+	"required reputation" 1
 
 planet Wop-ant
 	attributes gaguka
@@ -1093,6 +1096,7 @@ planet Wop-ant
 	government Gaguka
 	shipyard "Gaguka Ships"
 	outfitter "Gaguka Basics"
+	"required reputation" 1
 
 planet Men-qaosh
 	attributes gaguka
@@ -1102,6 +1106,7 @@ planet Men-qaosh
 	government Gaguka
 	shipyard "Gaguka Ships"
 	outfitter "Gaguka Basics"
+	"required reputation" 1
 
 planet Jubint
 	attributes gaguka
@@ -1111,6 +1116,7 @@ planet Jubint
 	government Gaguka
 	shipyard "Gaguka Ships"
 	outfitter "Gaguka Basics"
+	"required reputation" 1
 
 planet Myersting
 	attributes gaguka
@@ -1121,6 +1127,7 @@ planet Myersting
 	shipyard "Gaguka Ships"
 	shipyard "Tem-tehy Ships"
 	outfitter "Gaguka Basics"
+	"required reputation" 1
 
 planet Minkan-wag-onhe
 	attributes tem-tehy
