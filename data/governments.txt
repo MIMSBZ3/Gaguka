@@ -1,6 +1,7 @@
 government Gaguka
 	swizzle 25
 	color 0.706 0.208 0.208
+	"player reputation" 1
 
 government "Quarg (Gaguka)"
 	"display name" Quarg

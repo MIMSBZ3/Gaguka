@@ -115,6 +115,7 @@ mission "Go to Qoasly"
 	source
 		government Gaguka
 		not planet Jubint
+		not "Transport Qoasly already there"
 	to offer
 		has "event: Qoasly wants transport 1"
 	destination Jubint
