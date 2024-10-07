@@ -106,8 +106,8 @@ mission "First Contact: Gaguka"
 
 event "Qoasly wants transport 1"
 
-mission "Go to Qoasly"
-	name "Go to <destination>"
+mission "Go to Qoasly."
+	name "Go to <destination>."
 	description "Go pick up Qoasly, who is on <destination>, for unknown reasons."
 	landing
 	deadline
@@ -140,18 +140,18 @@ mission "Transport Qoasly"
 				`	"Well, I guess so, if you pay me <payment>."`
 					goto sad
 			label glad
-			`	"Thank you <last>, I've had trouble getting a flight." Qoasly says`
+			`	"Thank you <last>, I've had trouble getting a flight." Qoasly says.`
 				goto end
 			label sad
 			action
 				"reputation: Gaguka" = 0
-			`	"Okay, but you have been rather rude." says Qoasly`
+			`	"Okay, but you have been rather rude." says Qoasly.`
 			label end
 		accept
 	on complete
 		payment 1000000
 
-mission "Transport Qoasly already there"
+mission "Transport Qoasly 2"
 	name "Take Qoasly and Mushcosh to <destination>."
 	description "Qoasly and Mushcosh want to go to <destination> for matters of high importance."
 	source Jubint
@@ -181,5 +181,41 @@ mission "Transport Qoasly already there"
 			label decline
 			`	"That just got you into trouble. Don't ask those sorts of questions!" Qoasly distastefully says. Upon hearing this, all the other rhinos at the spaceport start a stampede.`
 				die
+	on complete
+		payment 1000000
+
+mission "."
+	name "."
+	description "."
+	source Wop-ant
+	to offer
+		has "Transport Qoasly" or "Transport Qoasly 2"
+	destination 
+	on offer
+		conversation
+			`When you have made sure everything is ready for take-off, you wait for Qoasly in the spaceport. Finally a important-looking rhino comes toward you.`
+			choice
+				`	(Hurry away.)
+				`	(Stay.)
+					goto great
+			`	The rhino hurries after you until he catches you up.`
+			label great
+			`	When he gets to you, he says, "Qoasly sends word to tell you that he will arive at your ship soon. By the way, my name is Wincolwire."`
+			`	You hurry` 
+				accept
+	on complete
+		payment 1000000
+
+mission "."
+	name "."
+	description "."
+	source Jubint
+	to offer
+		not ""
+		has ""
+	destination 
+	on offer
+		conversation
+			``
 	on complete
 		payment 1000000
