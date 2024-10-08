@@ -94,7 +94,7 @@ mission "First Contact: Gaguka"
 			`	"Thanks again. Good-bye." says Qoasly, and hurries off into the crowd.`
 				goto reallyend
 			label end
-			`	"That's sad. Are you sure?"`
+			`	"Are you sure?"`
 			choice
 				`	"I give in. I'll come."`
 					goto good
@@ -155,6 +155,7 @@ mission "Transport Qoasly 2"
 	name "Take Qoasly and Mushcosh to <destination>."
 	description "Qoasly and Mushcosh want to go to <destination> for matters of high importance."
 	source Jubint
+	clearance
 	to offer
 		not "Go to Qoasly: done"
 		has "event: Qoasly wants transport 1"
@@ -184,10 +185,13 @@ mission "Transport Qoasly 2"
 	on complete
 		payment 1000000
 
-mission "."
-	name "."
-	description "."
+mission "Transport Marnackh"
+	name "Take Marnackh to <destination>."
+	description "Take Marnackh to <destination>. Arive there by <deadline>, or face the consequneces."
+	deadline
+	deadline 1
 	source Wop-ant
+	clearance
 	to offer
 		has "Transport Qoasly" or "Transport Qoasly 2"
 	destination 
@@ -200,16 +204,20 @@ mission "."
 					goto great
 			`	The rhino hurries after you until he catches you up.`
 			label great
-			`	When he gets to you, he says, "Qoasly sends word to tell you that he will arive at your ship soon. By the way, my name is Wincolwire."`
-			`	You hurry` 
+			`	When he gets to you, he says, "Marnackh sends word to tell you that he will arive at your ship soon. You are taking him to <destination>. By the way, my name is Wincolwire."`
+			`	You hurry back to your ship, and are just in time! Marnackh hurries onto you ship as you get to it.`
 				accept
 	on complete
-		payment 1000000
+		log "People" "Qoasly" `Marnackh is a government offical who helps settle planets. He is trying to establish a colony on Yeo-ash currently.`
+		payment 10000
+		conversation
+			`	You and Marnackh have been chating on the journey, and he seems to be trying to establish a colony on Yeo-ash.`
 
 mission "."
 	name "."
 	description "."
 	source Jubint
+	clearance
 	to offer
 		not ""
 		has ""
