@@ -241,7 +241,7 @@ mission "Transport Marnackh 2"
 	to offer
 		has "Transport Marnackh 1"
 	destination Yeo-ash 
-	passengers 87
+	passengers 74
 	on offer
 		conversation
 			``
