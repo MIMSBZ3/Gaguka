@@ -8,6 +8,7 @@ mission "First Contact: Gaguka"
 		government Gaguka
 		not planet Jubint
 	destination Jubint
+	passengers 1
 	on offer
 		conversation
 			`Upon landing on <origin>, a rhino walks up to you. You feel a bit uneasy.`
@@ -106,7 +107,7 @@ mission "First Contact: Gaguka"
 
 event "Qoasly wants transport 1"
 
-mission "Go to Qoasly."
+mission "Go to Qoasly"
 	name "Go to <destination>."
 	description "Go pick up Qoasly, who is on <destination>, for unknown reasons."
 	landing
@@ -131,6 +132,7 @@ mission "Transport Qoasly"
 		has "Go to Qoasly: done"
 		not "Transport Qoasly already there: done"
 	destination Wop-ant
+	passengers 2
 	on offer
 		conversation
 			`When you land on <origin>, Qoasly and another rhino walk up to you. You greet Qoasly and the other rhino. "Captain <last>," says Qoasly. "Can you take me and Mushcosh to <destination>? I have a meeting of great importance!"`
@@ -160,6 +162,7 @@ mission "Transport Qoasly 2"
 		not "Go to Qoasly: done"
 		has "event: Qoasly wants transport 1"
 	destination Wop-ant
+	passengers 2
 	on offer
 		conversation
 			`You run into Qoasly and another rhino while walking through the spaceport. "Captain <last>," says Qoasly. "Can you take me and Mushcosh to <destination>? I have a meeting of great importance!"`
@@ -188,13 +191,14 @@ mission "Transport Qoasly 2"
 mission "Transport Marnackh"
 	name "Take Marnackh to <destination>."
 	description "Take Marnackh to <destination>. Arive there by <deadline>, or face the consequneces."
-	deadline
-	deadline 1
 	source Wop-ant
 	clearance
 	to offer
-		has "Transport Qoasly" or "Transport Qoasly 2"
-	destination 
+		has "Transport Qoasly"
+		or 
+			has "Transport Qoasly 2"
+	destination Van-qoash
+	passengers 1
 	on offer
 		conversation
 			`When you have made sure everything is ready for take-off, you wait for Qoasly in the spaceport. Finally a important-looking rhino comes toward you.`
@@ -211,17 +215,49 @@ mission "Transport Marnackh"
 		log "People" "Qoasly" `Marnackh is a government offical who helps settle planets. He is trying to establish a colony on Yeo-ash currently.`
 		payment 10000
 		conversation
-			`	You and Marnackh have been chating on the journey, and he seems to be trying to establish a colony on Yeo-ash.`
+			`You and Marnackh have been chating on the journey, and he seems to be trying to establish a colony on Yeo-ash.`
+			`	After paying you <payment>, Marnackh leaves.`
+
+mission "Transport Marnackh 1"
+	name "Take Marnackh to <destination>."
+	description "Take Marnackh to <destination>. He is now trying to get more recruits for the colony."
+	source Van-qoash
+	clearance
+	to offer
+		has "Transport Marnackh"
+	destination Myersting
+	passengers 49
+	on offer
+		conversation
+		`	Marnackh comes back to you pretty soon with a good number of Gaguka following him. He says to you, "I managed to convince a lot of people to come with me to establish a colony on Yeo-ash. can you take us to <destination> now?`
+	on complete
+		payment 3000000
+
+mission "Transport Marnackh 2"
+	name "Take Marnackh to <destination>."
+	description "Take Marnackh to <destination>. He is now establishing the colony."
+	source Myersting
+	clearance
+	to offer
+		has "Transport Marnackh 1"
+	destination Yeo-ash 
+	passengers 87
+	on offer
+		conversation
+			``
+	on complete
+		payment 6000000
 
 mission "."
 	name "."
 	description "."
-	source Jubint
+	source 
 	clearance
 	to offer
 		not ""
 		has ""
 	destination 
+	passengers 49
 	on offer
 		conversation
 			``
