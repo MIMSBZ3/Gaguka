@@ -158,7 +158,6 @@ mission "Transport Qoasly 2"
 	description "Qoasly and Mushcosh want to go to <destination> for matters of high importance."
 	source Jubint
 	clearance
-	to offer
 		not "Go to Qoasly: done"
 		has "event: Qoasly wants transport 1"
 	destination Wop-ant
@@ -229,13 +228,21 @@ mission "Transport Marnackh 1"
 	passengers 49
 	on offer
 		conversation
-		`	Marnackh comes back to you pretty soon with a good number of Gaguka following him. He says to you, "I managed to convince a lot of people to come with me to establish a colony on Yeo-ash. can you take us to <destination> now?`
+			`Marnackh comes back to you pretty soon with a good number of Gaguka following him. He says to you, "I managed to convince a lot of people to come with me to establish a colony on Yeo-ash. Can you take us to <destination> now?`
+			choice
+				`	"No thanks, I'll never help you again."`
+					flee
+				`	"Ok, I'll get ready for takeoff."`
+					accept
+	on decline
+		"reputation: Gaguka" -= 1000000000
 	on complete
 		payment 3000000
 
 mission "Transport Marnackh 2"
 	name "Take Marnackh to <destination>."
 	description "Take Marnackh to <destination>. He is now establishing the colony."
+	landing
 	source Myersting
 	clearance
 	to offer
@@ -244,10 +251,17 @@ mission "Transport Marnackh 2"
 	passengers 74
 	on offer
 		conversation
-			``
+			`When you land on <origin>, after about five hours, Marnackh comes back to the <ship> with about 35 new Gaguka, along with the old. He says, "Captain <first> <last>, we can head to <system> now.`
+			choice
+				`	"Sorry, but I have other stuff to do."`
+					defer
+				`	"Ok, I'll get ready for takeoff."`
+					accept
 	on complete
 		payment 6000000
-
+		conversation
+			`When you land on the planet, a quarter of your passengers look at the planet, and demand to go back. Incidentally, they are all from <origin>. The others happily start felling trees with there horns.`
+			`	Marnackh `
 mission "."
 	name "."
 	description "."
