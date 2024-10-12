@@ -211,10 +211,10 @@ mission "Transport Marnackh"
 			`	You hurry back to your ship, and are just in time! Marnackh hurries onto you ship as you get to it.`
 				accept
 	on complete
-		log "People" "Qoasly" `Marnackh is a government offical who helps settle planets. He is trying to establish a colony on Yeo-ash currently.`
+		log "People" "Qoasly" `Marnackh is a government offical who helps settle planets. He is trying to establish a colony on a new planet currently.`
 		payment 10000
 		conversation
-			`You and Marnackh have been chating on the journey, and he seems to be trying to establish a colony on Yeo-ash.`
+			`You and Marnackh have been chating on the journey, and he seems to be trying to establish a colony on new planet.`
 			`	After paying you <payment>, Marnackh leaves.`
 
 mission "Transport Marnackh 1"
@@ -228,7 +228,7 @@ mission "Transport Marnackh 1"
 	passengers 49
 	on offer
 		conversation
-			`Marnackh comes back to you pretty soon with a good number of Gaguka following him. He says to you, "I managed to convince a lot of people to come with me to establish a colony on Yeo-ash. Can you take us to <destination> now?`
+			`Marnackh comes back to you pretty soon with a good number of Gaguka following him. He says to you, "I managed to convince a lot of people to come with me to establish a colony on the new planet. Can you take us to <destination> now?`
 			choice
 				`	"No thanks, I'll never help you again."`
 					flee
@@ -247,31 +247,65 @@ mission "Transport Marnackh 2"
 	clearance
 	to offer
 		has "Transport Marnackh 1"
-	destination Yeo-ash 
+	destination Yeo-ash
 	passengers 74
 	on offer
 		conversation
-			`When you land on <origin>, after about five hours, Marnackh comes back to the <ship> with about 35 new Gaguka, along with the old. He says, "Captain <first> <last>, we can head to <system> now.`
+			`When you land on <origin>, after about five hours, Marnackh comes back to the <ship> with about 35 new Gaguka, along with the old. He says, "Captain <first> <last>, we can head to <system> now. I have thought of a name for it. Yeo-ash!"`
 			choice
 				`	"Sorry, but I have other stuff to do."`
 					defer
 				`	"Ok, I'll get ready for takeoff."`
 					accept
+	on accept
+		event "gaguka: Yeo-ash colonized" 0
 	on complete
 		payment 6000000
+
+event "gaguka: Yeo-ash colonized"
+	system Tout-yhalo
+		remove object
+			sprite planet/rock4
+			distance 3014
+			period 11187.701
+		add object Yeo-ash
+			sprite planet/rock4
+			distance 3014
+			period 11187.701
+
+mission "Transport Marnackh 3"
+	name "Take Gaguka to <destination>."
+	description "Take the unwilling rhinos back to <destination>. They are extremely dishonered."
+	landing
+	source Yeo-ash
+	clearance
+	to offer
+		has "Transport Marnackh 2"
+	destination Myersting
+	passengers 27
+	on offer
 		conversation
-			`When you land on the planet, a quarter of your passengers look at the planet, and demand to go back. Incidentally, they are all from <origin>. The others happily start felling trees with there horns.`
-			`	Marnackh `
-mission "."
+			`When you land on the planet, a quarter of your passengers look at the planet, and demand to go back. Incidentally, they are all from <destination>. The others happily start felling trees with there horns.`
+			`	Marnackh says to you, "Can you take the complaining ones back to <destination>? They are extremely dishonered!"`
+			choice
+				`	"Ok."`
+					accept
+				`	"No thanks"`
+					decline
+	on complete
+		payment 100000
+		
+mission ""
 	name "."
 	description "."
+	landing
 	source 
 	clearance
 	to offer
 		not ""
 		has ""
 	destination 
-	passengers 49
+	passengers 
 	on offer
 		conversation
 			``

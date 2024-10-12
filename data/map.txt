@@ -813,7 +813,7 @@ system Tout-yhalo
 			sprite planet/luna-b
 			distance 267
 			period 164.918
-	object Yeo-ash
+	object
 		sprite planet/rock4
 		distance 3014
 		period 11187.701
