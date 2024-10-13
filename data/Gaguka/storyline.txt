@@ -115,6 +115,7 @@ mission "Go to Qoasly"
 	deadline 1
 	source
 		government Gaguka
+		has "First Contact: Gaguka: done"
 		not planet Jubint
 		not "Transport Qoasly already there"
 	to offer
@@ -275,26 +276,29 @@ event "gaguka: Yeo-ash colonized"
 
 mission "Transport Marnackh 3"
 	name "Take Gaguka to <destination>."
-	description "Take the unwilling rhinos back to <destination>. They are extremely dishonered."
+	description "Take the unwilling Gaguka back to <destination>. They are extremely dishonered."
 	landing
 	source Yeo-ash
 	clearance
 	to offer
 		has "Transport Marnackh 2"
-	destination Myersting
-	passengers 27
-	on offer
+	destination Yeo-ash
+	waypoint Myersting
+	passengers 28
+	waypoint Van-qoash
+	passengers 1
+		on offer
 		conversation
 			`When you land on the planet, a quarter of your passengers look at the planet, and demand to go back. Incidentally, they are all from <destination>. The others happily start felling trees with there horns.`
-			`	Marnackh says to you, "Can you take the complaining ones back to <destination>? They are extremely dishonered!"`
+			`	Marnackh says to you, "Can you take the complaining ones back to <destination>? They are now extremely dishonered, and I had hoped for a pleasant time!" A call suddenly comes in from Qoasly. "Can you take me to Yeo-ash, where you are?"`
 			choice
 				`	"Ok."`
 					accept
-				`	"No thanks"`
+				`	"No thanks."`
 					decline
 	on complete
 		payment 100000
-		
+
 mission ""
 	name "."
 	description "."
