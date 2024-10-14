@@ -91,7 +91,6 @@ mission "First Contact: Gaguka"
 			label good
 			action
 				event "Qoasly wants transport 1" 7
-				set "agreed to take Qoasly next time"
 			`	"Thanks again. Good-bye." says Qoasly, and hurries off into the crowd.`
 				goto reallyend
 			label end
@@ -109,17 +108,17 @@ event "Qoasly wants transport 1"
 
 mission "Go to Qoasly"
 	name "Go to <destination>."
-	description "Go pick up Qoasly, who is on <destination>, for unknown reasons."
+	description "Go pick up Qoasly, who is on <destination>, for unknown reasons, by <deadline>."
 	landing
 	deadline
 	deadline 1
 	source
 		government Gaguka
-		has "First Contact: Gaguka: done"
 		not planet Jubint
-		not "Transport Qoasly already there"
 	to offer
 		has "event: Qoasly wants transport 1"
+		has "First Contact: Gaguka: done"
+		not "Transport Qoasly already there"
 	destination Jubint
 	on offer
 		dialog `You get an incoming call from <destination>. "<first> <last>!" says Qoasly. "Can you come here to <destination>?"`
@@ -150,7 +149,8 @@ mission "Transport Qoasly"
 				"reputation: Gaguka" = 0
 			`	"Okay, but you have been rather rude." says Qoasly.`
 			label end
-		accept
+			`	`
+				accept
 	on complete
 		payment 1000000
 
@@ -159,6 +159,7 @@ mission "Transport Qoasly 2"
 	description "Qoasly and Mushcosh want to go to <destination> for matters of high importance."
 	source Jubint
 	clearance
+	to offer
 		not "Go to Qoasly: done"
 		has "event: Qoasly wants transport 1"
 	destination Wop-ant
@@ -203,8 +204,8 @@ mission "Transport Marnackh"
 		conversation
 			`When you have made sure everything is ready for take-off, you wait for Qoasly in the spaceport. Finally a important-looking rhino comes toward you.`
 			choice
-				`	(Hurry away.)
-				`	(Stay.)
+				`	(Hurry away.)`
+				`	(Stay.)`
 					goto great
 			`	The rhino hurries after you until he catches you up.`
 			label great
