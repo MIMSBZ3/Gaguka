@@ -1054,9 +1054,14 @@ planet Urani
 	government "Quarg (Gaguka)"
 
 planet Yeo-ash
+	attributes gaguka
 	landscape land/canyon16
 	description "To be done."
-	government Uninhabited
+	spaceport "To be done."
+	government Gaguka
+	shipyard "Gaguka Ships"
+	outfitter "Gaguka Basics"
+	"required reputation" 1
 
 planet Jepo
 	attributes gaguka

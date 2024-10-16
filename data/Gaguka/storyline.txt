@@ -195,9 +195,9 @@ mission "Transport Marnackh"
 	source Wop-ant
 	clearance
 	to offer
-		has "Transport Qoasly"
-		or 
-			has "Transport Qoasly 2"
+		or
+			has "Transport Qoasly: done"
+			has "Transport Qoasly 2: done"
 	destination Van-qoash
 	passengers 1
 	on offer
@@ -213,7 +213,7 @@ mission "Transport Marnackh"
 			`	You hurry back to your ship, and are just in time! Marnackh hurries onto you ship as you get to it.`
 				accept
 	on complete
-		log "People" "Qoasly" `Marnackh is a government offical who helps settle planets. He is trying to establish a colony on a new planet currently.`
+		log "People" "Marnackh" `Marnackh is a government offical who helps settle planets. He is trying to establish a colony on a new planet currently.`
 		payment 10000
 		conversation
 			`You and Marnackh have been chating on the journey, and he seems to be trying to establish a colony on new planet.`
@@ -225,7 +225,7 @@ mission "Transport Marnackh 1"
 	source Van-qoash
 	clearance
 	to offer
-		has "Transport Marnackh"
+		has "Transport Marnackh: done"
 	destination Myersting
 	passengers 49
 	on offer
@@ -240,6 +240,20 @@ mission "Transport Marnackh 1"
 		"reputation: Gaguka" -= 1000000000
 	on complete
 		payment 3000000
+		event "gaguka: Yeo-ash colonized" 0
+
+event "gaguka: Yeo-ash colonized"
+	system Tout-yhalo
+		government Gaguka
+		remove object
+			sprite planet/rock4
+			distance 3014
+			period 11187.701
+
+		add object Yeo-ash
+			sprite planet/rock4
+			distance 3014
+			period 11187.701
 
 mission "Transport Marnackh 2"
 	name "Take Marnackh to <destination>."
@@ -248,50 +262,36 @@ mission "Transport Marnackh 2"
 	source Myersting
 	clearance
 	to offer
-		has "Transport Marnackh 1"
+		has "Transport Marnackh 1: done"
 	destination Yeo-ash
 	passengers 74
 	on offer
 		conversation
-			`When you land on <origin>, after about five hours, Marnackh comes back to the <ship> with about 35 new Gaguka, along with the old. He says, "Captain <first> <last>, we can head to <system> now. I have thought of a name for it. Yeo-ash!"`
+			`When you land on <origin>, after about five hours, Marnackh comes back to the <ship> with about 35 new Gaguka, along with the old. He says, "Captain <first> <last>, we can head to <destination> now. I just thought of the name."`
 			choice
 				`	"Sorry, but I have other stuff to do."`
 					defer
 				`	"Ok, I'll get ready for takeoff."`
 					accept
-	on accept
-		event "gaguka: Yeo-ash colonized" 0
 	on complete
 		payment 6000000
 
-event "gaguka: Yeo-ash colonized"
-	system Tout-yhalo
-		remove object
-			sprite planet/rock4
-			distance 3014
-			period 11187.701
-		add object Yeo-ash
-			sprite planet/rock4
-			distance 3014
-			period 11187.701
-
 mission "Transport Marnackh 3"
-	name "Take Gaguka to <destination>."
-	description "Take the unwilling Gaguka back to <destination>. They are extremely dishonered."
+	name "Take Gaguka to Myersting."
+	description "Take the unwilling Gaguka back to Myersting. They are now extremely dishonored."
 	landing
 	source Yeo-ash
 	clearance
 	to offer
-		has "Transport Marnackh 2"
+		has "Transport Marnackh 2: done"
 	destination Yeo-ash
-	waypoint Myersting
+	waypoint "Myersting"
+	waypoint "Van-qoash"
 	passengers 28
-	waypoint Van-qoash
-	passengers 1
-		on offer
+	on offer
 		conversation
-			`When you land on the planet, a quarter of your passengers look at the planet, and demand to go back. Incidentally, they are all from <destination>. The others happily start felling trees with there horns.`
-			`	Marnackh says to you, "Can you take the complaining ones back to <destination>? They are now extremely dishonered, and I had hoped for a pleasant time!" A call suddenly comes in from Qoasly. "Can you take me to Yeo-ash, where you are?"`
+			`When you land on the planet, a quarter of your passengers look at the planet, and demand to go back. Incidentally, they are all from Myersting. The others happily start felling trees with there horns.`
+			`	Marnackh says to you, "Can you take the complaining ones back to Myersting? They are now extremely dishonered, and I had hoped for a pleasant time!" A call suddenly comes in from Qoasly. "Can you take me to where you are currently?"`
 			choice
 				`	"Ok."`
 					accept
