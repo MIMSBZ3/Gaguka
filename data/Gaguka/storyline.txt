@@ -285,34 +285,43 @@ mission "Transport Marnackh 3"
 	to offer
 		has "Transport Marnackh 2: done"
 	destination Yeo-ash
-	waypoint "Myersting"
-	waypoint "Van-qoash"
+	stopover "Myersting"
+	stopover "Van-qoash"
 	passengers 28
 	on offer
 		conversation
-			`When you land on the planet, a quarter of your passengers look at the planet, and demand to go back. Incidentally, they are all from Myersting. The others happily start felling trees with there horns.`
-			`	Marnackh says to you, "Can you take the complaining ones back to Myersting? They are now extremely dishonered, and I had hoped for a pleasant time!" A call suddenly comes in from Qoasly. "Can you take me to where you are currently?"`
+			`When you land on the planet, a quarter of your passengers look at the planet, and demand to go back. Incidentally, they are all from Myersting. The others happily start felling trees with their horns.`
+			`	Marnackh says to you, "Can you take the complaining ones back to Myersting? They are now extremely dishonered, and I had hoped for a pleasant time!" A call suddenly comes in from Qoasly. "Can you take me to where you are currently?" "You'd better drop off the unwilling first and then take up the boss." Marnackh says.`
 			choice
 				`	"Ok."`
 					accept
 				`	"No thanks."`
 					decline
+	on stopover
+		conversation
+			`Qoasly, once safely in the air, says, "How was the colony when you last left it?"`
+			choice
+				`	"Great!"`
+				`	"Good, but just geting started."`
+			label great
+			`	"I am glad to hear it," says Qoasly. "It's a three days journey, correct?" You reply, "Correct."`
+				depart
 	on complete
 		payment 100000
 
-mission ""
-	name "."
-	description "."
-	landing
-	source 
-	clearance
-	to offer
-		not ""
-		has ""
-	destination 
-	passengers 
-	on offer
-		conversation
-			``
-	on complete
-		payment 1000000
+# mission ""
+#	name "."
+#	description "."
+#	landing
+#	source 
+#	clearance
+#	to offer
+#		not ""
+#		has ""
+#	destination 
+#	passengers 
+#	on offer
+#		conversation
+#			``
+#	on complete
+#		payment 1000000

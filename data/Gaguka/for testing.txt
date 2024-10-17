@@ -1,0 +1,8 @@
+mission "gaguka colonize yeoash"
+	name "Gaguka Colonize Yeo-ash"
+	description "Accepting causes Yeo-ash to be colonized."
+	job
+	source Jubint
+	on accept
+		event "gaguka: Yeo-ash colonized" 0
+		fail
