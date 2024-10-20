@@ -5,4 +5,5 @@ mission "gaguka colonize yeoash"
 	source Jubint
 	on accept
 		event "gaguka: Yeo-ash colonized" 0
+		has "Transport Marnackh 2: done"
 		fail

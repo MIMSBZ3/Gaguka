@@ -1053,6 +1053,12 @@ planet Urani
 	spaceport "To be done."
 	government "Quarg (Gaguka)"
 
+planet Yeo-mink
+	landscape land/canyon16
+	description "To be done."
+	government Uninhabited
+	"required reputation" 0
+
 planet Yeo-ash
 	attributes gaguka
 	landscape land/canyon16

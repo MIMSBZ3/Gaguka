@@ -118,7 +118,7 @@ mission "Go to Qoasly"
 	to offer
 		has "event: Qoasly wants transport 1"
 		has "First Contact: Gaguka: done"
-		not "Transport Qoasly already there"
+		not "Transport Qoasly 2"
 	destination Jubint
 	on offer
 		dialog `You get an incoming call from <destination>. "<first> <last>!" says Qoasly. "Can you come here to <destination>?"`
@@ -130,7 +130,7 @@ mission "Transport Qoasly"
 	source Jubint
 	to offer
 		has "Go to Qoasly: done"
-		not "Transport Qoasly already there: done"
+		not "Transport Qoasly 2: done"
 	destination Wop-ant
 	passengers 2
 	on offer
@@ -250,7 +250,7 @@ event "gaguka: Yeo-ash colonized"
 			distance 3014
 			period 11187.701
 
-		add object Yeo-ash
+		add object Yeo-mink
 			sprite planet/rock4
 			distance 3014
 			period 11187.701
@@ -263,7 +263,7 @@ mission "Transport Marnackh 2"
 	clearance
 	to offer
 		has "Transport Marnackh 1: done"
-	destination Yeo-ash
+	destination Yeo-mink
 	passengers 74
 	on offer
 		conversation
@@ -280,15 +280,16 @@ mission "Transport Marnackh 3"
 	name "Take Gaguka to Myersting."
 	description "Take the unwilling Gaguka back to Myersting. They are now extremely dishonored."
 	landing
-	source Yeo-ash
+	source Yeo-mink
 	clearance
 	to offer
 		has "Transport Marnackh 2: done"
-	destination Yeo-ash
+	destination Yeo-mink
 	stopover "Myersting"
 	stopover "Van-qoash"
 	passengers 28
 	on offer
+		event "gaguka: Yeo-mink rename" 10
 		conversation
 			`When you land on the planet, a quarter of your passengers look at the planet, and demand to go back. Incidentally, they are all from Myersting. The others happily start felling trees with their horns.`
 			`	Marnackh says to you, "Can you take the complaining ones back to Myersting? They are now extremely dishonered, and I had hoped for a pleasant time!" A call suddenly comes in from Qoasly. "Can you take me to where you are currently?" "You'd better drop off the unwilling first and then take up the boss." Marnackh says.`
@@ -308,6 +309,12 @@ mission "Transport Marnackh 3"
 				depart
 	on complete
 		payment 100000
+		action
+			"reputation: Gaguka" = 1000
+		conversation
+			`You are met by scores of new gaguka cheering for you loudly. As you step of the <ship>, Marnackh hurries you off to a new building. As soon as you enter, Marnackh hands you <payment>. "You are now named "The Helper", <first> <last>!" he informs you.`
+
+event "gaguka: Yeo-mink rename"
 
 # mission ""
 #	name "."
