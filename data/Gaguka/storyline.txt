@@ -121,7 +121,7 @@ mission "Go to Qoasly"
 		not "Transport Qoasly 2"
 	destination Jubint
 	on offer
-		dialog `You get an incoming call from <destination>. "<first> <last>!" says Qoasly. "Can you come here to <destination>?"`
+		dialog `You get a call from <destination>. "<first> <last>!" says Qoasly. "Can you come here to <destination>?"`
 
 mission "Transport Qoasly"
 	name "Take Qoasly and Mushcosh to <destination>."
@@ -289,7 +289,7 @@ mission "Transport Marnackh 3"
 	stopover "Van-qoash"
 	passengers 28
 	on offer
-		event "gaguka: Yeo-mink rename" 10
+		event "gaguka: Yeo-mink rename 1" 10
 		conversation
 			`When you land on the planet, a quarter of your passengers look at the planet, and demand to go back. Incidentally, they are all from Myersting. The others happily start felling trees with their horns.`
 			`	Marnackh says to you, "Can you take the complaining ones back to Myersting? They are now extremely dishonered, and I had hoped for a pleasant time!" A call suddenly comes in from Qoasly. "Can you take me to where you are currently?" "You'd better drop off the unwilling first and then take up the boss." Marnackh says.`
@@ -314,7 +314,42 @@ mission "Transport Marnackh 3"
 		conversation
 			`You are met by scores of new gaguka cheering for you loudly. As you step of the <ship>, Marnackh hurries you off to a new building. As soon as you enter, Marnackh hands you <payment>. "You are now named "The Helper", <first> <last>!" he informs you.`
 
-event "gaguka: Yeo-mink rename"
+event "gaguka: Yeo-mink rename 1"
+
+mission "Yeo-mink rename"
+	landing
+	source 
+	clearance
+	to offer
+		not planet Yeo-mink
+		has "event: gaguka: Yeo-mink rename 1" 
+	on offer
+		event "gaguka: Yeo-mink rename 2" 0
+		conversation
+			`You get a call from Marnackh, "The new name of Yeo-mink is Yeo-ash, Helper!"`
+			choice
+				`	"Not contented with the old name, huh?"`
+					goto not contented
+				`	"That's great!"`
+					goto great
+			label not contented
+			`	"Correct, Helper."`
+				fail
+			label great
+			`	"I am glad you like it"`
+				fail
+
+event "gaguka: Yeo-mink rename 2"
+	system Tout-yhalo
+		remove object Yeo-mink
+			sprite planet/rock4
+			distance 3014
+			period 11187.701
+
+		add object Yeo-ash
+			sprite planet/rock4
+			distance 3014
+			period 11187.701
 
 # mission ""
 #	name "."

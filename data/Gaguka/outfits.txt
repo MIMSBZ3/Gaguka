@@ -1,3 +1,4 @@
 outfitter "Gaguka Basics"
 	Hyperdrive
+	"Scram Drive"
 	"Jump Drive"
