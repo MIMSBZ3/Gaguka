@@ -319,7 +319,6 @@ event "gaguka: Yeo-mink rename 1"
 mission "Yeo-mink rename"
 	landing
 	source 
-	clearance
 	to offer
 		not planet Yeo-mink
 		has "event: gaguka: Yeo-mink rename 1" 
@@ -329,10 +328,10 @@ mission "Yeo-mink rename"
 			`You get a call from Marnackh, "The new name of Yeo-mink is Yeo-ash, Helper!"`
 			choice
 				`	"Not contented with the old name, huh?"`
-					goto not contented
+					goto "not contented"
 				`	"That's great!"`
 					goto great
-			label not contented
+			label "not contented"
 			`	"Correct, Helper."`
 				fail
 			label great
@@ -351,12 +350,105 @@ event "gaguka: Yeo-mink rename 2"
 			distance 3014
 			period 11187.701
 
+mission "Rescue Gaguka"
+	name "Rescue Gaguka the Tem-tehy."
+	description "Go to <waypoints> and the go back to <origin> to preserve the Gaguka from the Tem-tehy."
+	source Wer-intoe
+	to offer
+		not ""
+		has ""
+	destination 
+	passengers 
+	on offer
+		event "Tem-tehy Invaders"
+		conversation
+			``
+	on complete
+		payment 1000000
+
+event "gaguka: Yeo-mink rename 2"
+	remove system "Hidden Tisinroba"
+				hidden
+				pos -1270.5 -2015.667
+				government Uninhabited
+				habitable 3400
+				belt 1925 7
+				asteroids "small rock" 6 6.132
+				asteroids "medium rock" 25 8.148
+				asteroids "large rock" 4 6.048
+				asteroids "small metal" 2 6.216
+				asteroids "medium metal" 19 4.2
+				asteroids "large metal" 1 6.3
+				minables iron 1 8.851
+				minables lead 4 6.901
+				minables aluminum 12 11.196
+				object
+					sprite star/a3
+					period 10
+				object
+					sprite planet/forest6
+					distance 393
+					period 53.445
+				object
+					sprite planet/miranda-b
+					distance 933
+					period 195.498
+				object
+					sprite planet/lava0
+					distance 1683.319
+					period 395.343
+				object
+					sprite planet/browndwarf-l-rogue
+					distance 3699
+					period 1543.288
+					object
+						sprite planet/dust0-b
+						distance 279
+						period 287.012
+
+	add system Tisinroba
+				pos -1270.5 -2015.667
+				government Uninhabited
+				habitable 3400
+				belt 1925 7
+				asteroids "small rock" 6 6.132
+				asteroids "medium rock" 25 8.148
+				asteroids "large rock" 4 6.048
+				asteroids "small metal" 2 6.216
+				asteroids "medium metal" 19 4.2
+				asteroids "large metal" 1 6.3
+				minables iron 1 8.851
+				minables lead 4 6.901
+				minables aluminum 12 11.196
+				object
+					sprite star/a3
+					period 10
+				object
+					sprite planet/forest6
+					distance 393
+					period 53.445
+				object
+					sprite planet/miranda-b
+					distance 933
+					period 195.498
+				object
+					sprite planet/lava0
+					distance 1683.319
+					period 395.343
+				object
+					sprite planet/browndwarf-l-rogue
+					distance 3699
+					period 1543.288
+					object
+						sprite planet/dust0-b
+						distance 279
+						period 287.012
+
 # mission ""
 #	name "."
 #	description "."
 #	landing
 #	source 
-#	clearance
 #	to offer
 #		not ""
 #		has ""

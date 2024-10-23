@@ -19,4 +19,4 @@ government "Quarg (Gaguka)"
 government Tem-tehy
 	swizzle 23
 	color 0.482 0.047 0.18
-
+	"player reputation" -100

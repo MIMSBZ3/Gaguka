@@ -1297,7 +1297,7 @@ system Trab-hak
 			distance 474
 			period 390.093
 
-system Tisnroba
+system "Hidden Tisinroba"
 	hidden
 	pos -1270.5 -2015.667
 	government Uninhabited
@@ -1335,4 +1335,3 @@ system Tisnroba
 			sprite planet/dust0-b
 			distance 279
 			period 287.012
-
