@@ -289,7 +289,7 @@ mission "Transport Marnackh 3"
 	stopover "Van-qoash"
 	passengers 28
 	on offer
-		event "gaguka: Yeo-mink rename 1" 10
+		event "gaguka: Yeo-mink rename 1" 11 19
 		conversation
 			`When you land on the planet, a quarter of your passengers look at the planet, and demand to go back. Incidentally, they are all from Myersting. The others happily start felling trees with their horns.`
 			`	Marnackh says to you, "Can you take the complaining ones back to Myersting? They are now extremely dishonered, and I had hoped for a pleasant time!" A call suddenly comes in from Qoasly. "Can you take me to where you are currently?" "You'd better drop off the unwilling first and then take up the boss." Marnackh says.`
@@ -366,83 +366,9 @@ mission "Rescue Gaguka"
 	on complete
 		payment 1000000
 
-event "gaguka: Yeo-mink rename 2"
-	remove system "Hidden Tisinroba"
-				hidden
-				pos -1270.5 -2015.667
-				government Uninhabited
-				habitable 3400
-				belt 1925 7
-				asteroids "small rock" 6 6.132
-				asteroids "medium rock" 25 8.148
-				asteroids "large rock" 4 6.048
-				asteroids "small metal" 2 6.216
-				asteroids "medium metal" 19 4.2
-				asteroids "large metal" 1 6.3
-				minables iron 1 8.851
-				minables lead 4 6.901
-				minables aluminum 12 11.196
-				object
-					sprite star/a3
-					period 10
-				object
-					sprite planet/forest6
-					distance 393
-					period 53.445
-				object
-					sprite planet/miranda-b
-					distance 933
-					period 195.498
-				object
-					sprite planet/lava0
-					distance 1683.319
-					period 395.343
-				object
-					sprite planet/browndwarf-l-rogue
-					distance 3699
-					period 1543.288
-					object
-						sprite planet/dust0-b
-						distance 279
-						period 287.012
-
-	add system Tisinroba
-				pos -1270.5 -2015.667
-				government Uninhabited
-				habitable 3400
-				belt 1925 7
-				asteroids "small rock" 6 6.132
-				asteroids "medium rock" 25 8.148
-				asteroids "large rock" 4 6.048
-				asteroids "small metal" 2 6.216
-				asteroids "medium metal" 19 4.2
-				asteroids "large metal" 1 6.3
-				minables iron 1 8.851
-				minables lead 4 6.901
-				minables aluminum 12 11.196
-				object
-					sprite star/a3
-					period 10
-				object
-					sprite planet/forest6
-					distance 393
-					period 53.445
-				object
-					sprite planet/miranda-b
-					distance 933
-					period 195.498
-				object
-					sprite planet/lava0
-					distance 1683.319
-					period 395.343
-				object
-					sprite planet/browndwarf-l-rogue
-					distance 3699
-					period 1543.288
-					object
-						sprite planet/dust0-b
-						distance 279
-						period 287.012
+event "Tem-tehy Invaders"
+	system Tisinroba
+		remove hidden
 
 # mission ""
 #	name "."

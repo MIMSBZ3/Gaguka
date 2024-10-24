@@ -26,6 +26,7 @@ system Buin-een
 	trade Medical 817
 	trade Metal 262
 	trade Plastic 354
+	fleet Gaguka 650
 	object
 		sprite star/k0-old
 		period 10
@@ -95,6 +96,7 @@ system Niun
 	trade Medical 678
 	trade Metal 483
 	trade Plastic 518
+	fleet Gaguka 650
 	object
 		sprite star/g5
 		period 10
@@ -356,6 +358,7 @@ system Ahh-thu
 	trade Medical 818
 	trade Metal 230
 	trade Plastic 375
+	fleet Gaguka 650
 	object
 		sprite star/a-giant
 		period 10
@@ -538,7 +541,8 @@ system Qua-key
 	trade "Luxury Goods" 968
 	trade Medical 830
 	trade Metal 410
-	trade Plastic 312
+	trade Plastic 312	
+	fleet Gaguka 650
 	object
 		sprite star/g5-old
 		period 10
@@ -588,6 +592,7 @@ system Rah-ru
 	trade Medical 873
 	trade Metal 488
 	trade Plastic 280
+	fleet Gaguka 650
 	object
 		sprite star/l-dwarf
 		distance 112.129
@@ -650,6 +655,7 @@ system Sha-gu
 	trade Medical 862
 	trade Metal 460
 	trade Plastic 317
+	fleet Gaguka 650
 	object
 		sprite star/a3
 		period 10
@@ -727,6 +733,7 @@ system Thanel-boo
 	trade Medical 882
 	trade Metal 506
 	trade Plastic 312
+	fleet Gaguka 650
 	object
 		sprite star/g3
 		period 10
@@ -794,6 +801,8 @@ system Tout-yhalo
 	trade Medical 788
 	trade Metal 219
 	trade Plastic 380
+	fleet Gaguka 650
+	fleet "Quarg (Gaguka)" 650
 	object
 		sprite star/m-dwarf
 		period 10
@@ -854,6 +863,7 @@ system Who-ath
 	trade Medical 836
 	trade Metal 479
 	trade Plastic 309
+	fleet Gaguka 650
 	object
 		sprite star/k8
 		period 10
@@ -1297,7 +1307,7 @@ system Trab-hak
 			distance 474
 			period 390.093
 
-system "Hidden Tisinroba"
+system Tisinroba
 	hidden
 	pos -1270.5 -2015.667
 	government Uninhabited

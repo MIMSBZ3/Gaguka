@@ -9,12 +9,15 @@ government "Quarg (Gaguka)"
 	"player reputation" 1
 	"attitude toward"
 		Quarg 1
+		Gaguka 1000
 		"Quarg (Gegno)" 1
 		"Quarg (Hai)" 1
 		"Quarg (Kor Efret)" 1
 	"death sentence" "quarg imprisonment"
 	"hostile hail" "hostile quarg"
 	"hostile disabled hail" "hostile quarg"
+	"friendly hail" "friendly quarg"
+	"friendly disabled hail" "friendly quarg"
 
 government Tem-tehy
 	swizzle 23

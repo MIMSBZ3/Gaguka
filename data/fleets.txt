@@ -30,3 +30,13 @@ fleet "Large Quarg (Gaguka)"
 	variant
 		"Quarg Skylark" 3
 		"Quarg Wardragon"
+
+fleet "Gaguka"
+	government Gaguka
+	names "gaguka"
+	cargo 10
+	personality
+		heroic forbearing opportunistic
+	variant
+		"Elephant" 4
+		"Giraffe"

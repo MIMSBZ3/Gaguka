@@ -5,8 +5,8 @@ ship "Giraffe"
 	attributes
 		category "Heavy Warship"
 		cost 32000000
-		"shields" 7000000
-		"hull" 3600000
+		"shields" 70000
+		"hull" 36000
 		"bunks" 365
 		"mass" 1000
 		"drag" 1.59
@@ -19,10 +19,15 @@ ship "Giraffe"
 		#licenses
 		#	"Gaguka Offical"
 	outfits
-		Hyperdrive
-		"A860 Atomic Thruster"
-		"A865 Atomic Steering"
-		"AR120 Reverse Thruster" 2
+			Hyperdrive
+			"A860 Atomic Thruster"
+			"A865 Atomic Steering"
+			"Aeon Cell" 3
+			"Crystal Capacitor"
+			"Inhibitor Turret" 4
+			"Jump Drive"
+			"Large Heat Shunt" 2
+			"AR120 Reverse Thruster" 2
 	explode "tiny explosion" 60
 	explode "large explosion" 120
 	turret 15 -683
@@ -43,8 +48,8 @@ ship "Elephant"
 	attributes
 		category "Heavy Freighter"
 		cost 15000000
-		"shields" 100000
-		"hull" 3000000
+		"shields" 1000
+		"hull" 30000
 		"bunks" 154
 		"mass" 100
 		"drag" .99
