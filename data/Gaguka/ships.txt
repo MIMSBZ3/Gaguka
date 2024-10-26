@@ -28,6 +28,7 @@ ship "Giraffe"
 			"Jump Drive"
 			"Large Heat Shunt" 2
 			"AR120 Reverse Thruster" 2
+			"Dragonflame Cannon"
 	explode "tiny explosion" 60
 	explode "large explosion" 120
 	turret 15 -683
