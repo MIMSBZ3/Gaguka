@@ -12,9 +12,9 @@ ship "Giraffe"
 		"drag" 1.59
 		"heat dissipation" .27
 		"fuel capacity" 900
-		"outfit space" 1800
+		"outfit space" 180
 		"weapon capacity" 9800
-		"cargo space" 10000
+		"cargo space" 1000
 		"engine capacity" 219
 		#licenses
 		#	"Gaguka Offical"
@@ -25,7 +25,6 @@ ship "Giraffe"
 			"Aeon Cell" 3
 			"Crystal Capacitor"
 			"Inhibitor Turret" 4
-			"Jump Drive"
 			"Large Heat Shunt" 2
 			"AR120 Reverse Thruster" 2
 			"Dragonflame Cannon"
@@ -58,12 +57,14 @@ ship "Elephant"
 		"fuel capacity" 600
 		"outfit space" 900
 		"weapon capacity" 5500
-		"cargo space" 15000
+		"cargo space" 100
 		"engine capacity" 1000
 	outfits
 		Hyperdrive
+		"Large Heat Shunt" 2
 		"A860 Atomic Thruster"
 		"A865 Atomic Steering"
+		"Aeon Cell" 3
 		"AR120 Reverse Thruster" 2
 	explode "tiny explosion" 6
 	explode "large explosion" 12
@@ -101,7 +102,7 @@ ship "Lion"
 		"fuel capacity" 600
 		"outfit space" 900
 		"weapon capacity" 5500
-		"cargo space" 15000
+		"cargo space" 100
 		"engine capacity" 1000
 		"ramscoop" 1
 	outfits
@@ -145,7 +146,7 @@ ship "Hyena"
 		"fuel capacity" 600
 		"outfit space" 900
 		"weapon capacity" 5500
-		"cargo space" 15000
+		"cargo space" 100
 		"engine capacity" 1000
 		"ramscoop" 1
 	outfits
@@ -189,7 +190,7 @@ ship "Leopard"
 		"fuel capacity" 600
 		"outfit space" 900
 		"weapon capacity" 5500
-		"cargo space" 15000
+		"cargo space" 100
 		"engine capacity" 1000
 		"ramscoop" 1
 	outfits

@@ -7,3 +7,13 @@ mission "gaguka colonize yeoash"
 		event "gaguka: Yeo-ash colonized" 0
 		has "Transport Marnackh 2: done"
 		fail
+
+mission "like a"
+	name "Gaguka like you"
+	description "Gaguka like you."
+	job
+	source
+		government Gaguka
+	on accept
+		"reputation: Gaguka" = 1000
+		fail

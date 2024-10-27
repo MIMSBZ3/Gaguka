@@ -324,6 +324,7 @@ mission "Yeo-mink rename"
 		has "event: gaguka: Yeo-mink rename 1" 
 	on offer
 		event "gaguka: Yeo-mink rename 2" 0
+		event "Tem-tehy Invaders" 100
 		conversation
 			`You get a call from Marnackh, "The new name of Yeo-mink is Yeo-ash, Helper!"`
 			choice
@@ -350,6 +351,14 @@ event "gaguka: Yeo-mink rename 2"
 			distance 3014
 			period 11187.701
 
+event "Tem-tehy Invaders"
+	system Tisinroba
+		remove hidden
+	system Buin-een
+		add fleet "Tem-tehy Invaders" 300
+	system Ahh-thu
+		add fleet "Tem-tehy Invaders" 400
+
 mission "Rescue Gaguka"
 	name "Rescue Gaguka the Tem-tehy."
 	description "Go to <waypoints> and the go back to <origin> to preserve the Gaguka from the Tem-tehy."
@@ -365,10 +374,6 @@ mission "Rescue Gaguka"
 			``
 	on complete
 		payment 1000000
-
-event "Tem-tehy Invaders"
-	system Tisinroba
-		remove hidden
 
 # mission ""
 #	name "."

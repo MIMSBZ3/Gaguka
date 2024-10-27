@@ -34,9 +34,20 @@ fleet "Large Quarg (Gaguka)"
 fleet "Gaguka"
 	government Gaguka
 	names "gaguka"
-	cargo 10
+	cargo 3
 	personality
-		heroic forbearing opportunistic
+		heroic opportunistic
 	variant
 		"Elephant" 4
 		"Giraffe"
+
+fleet "Tem-tehy Invaders"
+	government Tem-tehy
+	names "Tem-tehy"
+	cargo 1
+	personality
+		heroic opportunistic
+	variant
+		"Lion"
+		"Hyena" 3
+		"Leopard" 4
