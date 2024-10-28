@@ -118,7 +118,7 @@ mission "Go to Qoasly"
 	to offer
 		has "event: Qoasly wants transport 1"
 		has "First Contact: Gaguka: done"
-		not "Transport Qoasly 2"
+		not "Transport Qoasly 2: done"
 	destination Jubint
 	on offer
 		dialog `You get a call from <destination>. "<first> <last>!" says Qoasly. "Can you come here to <destination>?"`
@@ -322,6 +322,9 @@ mission "Yeo-mink rename"
 	to offer
 		not planet Yeo-mink
 		has "event: gaguka: Yeo-mink rename 1" 
+	destination Yeo-mink
+	stopover
+	passengers
 	on offer
 		event "gaguka: Yeo-mink rename 2" 0
 		event "Tem-tehy Invaders" 100
@@ -334,10 +337,10 @@ mission "Yeo-mink rename"
 					goto great
 			label "not contented"
 			`	"Correct, Helper."`
-				fail
+			fail
 			label great
-			`	"I am glad you like it"`
-				fail
+			`	"I am glad you like it."`
+			fail
 
 event "gaguka: Yeo-mink rename 2"
 	system Tout-yhalo
@@ -362,18 +365,25 @@ event "Tem-tehy Invaders"
 mission "Rescue Gaguka"
 	name "Rescue Gaguka the Tem-tehy."
 	description "Go to <waypoints> and the go back to <origin> to preserve the Gaguka from the Tem-tehy."
-	source Wer-intoe
+	landing
+	source
+		government Gaguka
+		not planet Men-qaosh
+		not planet Myersting
 	to offer
-		not ""
-		has ""
-	destination 
-	passengers 
+		has "Tem-tehy Invaders"
+	destination Jubint
+	passengers 288
+	stopover "Men-qaosh"
+	stopover "Myersting"
 	on offer
-		event "Tem-tehy Invaders"
 		conversation
-			``
+			`You recive a hurried message from Qoasly. "Can you head to `
+			accept
 	on complete
 		payment 1000000
+		conversation
+			``
 
 # mission ""
 #	name "."
@@ -384,7 +394,8 @@ mission "Rescue Gaguka"
 #		not ""
 #		has ""
 #	destination 
-#	passengers 
+#	stopover
+#	passengers
 #	on offer
 #		conversation
 #			``
