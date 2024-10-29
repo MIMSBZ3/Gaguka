@@ -1091,7 +1091,7 @@ planet Jepo
 
 planet Wer-intoe
 	attributes gaguka
-	landscape land/hills12
+	landscape land/hills14
 	description "To be done."
 	spaceport "To be done."
 	government Gaguka

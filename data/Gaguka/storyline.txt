@@ -36,7 +36,7 @@ mission "First Contact: Gaguka"
 				`	"No thanks."`
 					goto no
 			label shoot
-			`	You fire your weapon, the rhino lowers its horn, and the <ship> disappears, you with it.`
+			`	You fire your weapon, the rhino lowers its horn, and you remember no more.`
 				die
 			label step
 			`	"Stay here!" says the rhino.`
@@ -323,8 +323,6 @@ mission "Yeo-mink rename"
 		not planet Yeo-mink
 		has "event: gaguka: Yeo-mink rename 1" 
 	destination Yeo-mink
-	stopover
-	passengers
 	on offer
 		event "gaguka: Yeo-mink rename 2" 0
 		event "Tem-tehy Invaders" 100
@@ -366,6 +364,7 @@ mission "Rescue Gaguka"
 	name "Rescue Gaguka the Tem-tehy."
 	description "Go to <waypoints> and the go back to <origin> to preserve the Gaguka from the Tem-tehy."
 	landing
+	deadline
 	source
 		government Gaguka
 		not planet Men-qaosh
@@ -378,17 +377,22 @@ mission "Rescue Gaguka"
 	stopover "Myersting"
 	on offer
 		conversation
-			`You recive a hurried message from Qoasly. "Can you head to `
-			accept
+			`You recive a hurried message from Qoasly. "Can you head to <stopovers> to pick up the weak of us? The Tem-tehy are invading! Then come to <destination>?`
+			choice
+				`	"How come it's always me who gets me out of you tight situations?"`
+					flee
+				`	"Okay!"`
+					accept
 	on complete
 		payment 1000000
 		conversation
-			``
+			`	`
 
 # mission ""
 #	name "."
 #	description "."
 #	landing
+#	deadline
 #	source 
 #	to offer
 #		not ""
