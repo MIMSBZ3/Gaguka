@@ -25,8 +25,8 @@ start "Gaguka"
 		attributes
 			category "Heavy Warship"
 			cost 32000000
-			"shields" 7000000
-			"hull" 3600000
+			"shields" 700000
+			"hull" 360000
 			"bunks" 365
 			"mass" 1000
 			"drag" 1.59

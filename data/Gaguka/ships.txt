@@ -16,8 +16,8 @@ ship "Giraffe"
 		"weapon capacity" 9800
 		"cargo space" 1000
 		"engine capacity" 219
-		#licenses
-		#	"Gaguka Offical"
+		licenses
+			"Gaguka Offical"
 	outfits
 			Hyperdrive
 			"A860 Atomic Thruster"
@@ -48,8 +48,8 @@ ship "Elephant"
 	attributes
 		category "Heavy Freighter"
 		cost 15000000
-		"shields" 1000
-		"hull" 30000
+		"shields" 50000
+		"hull" 3000000
 		"bunks" 154
 		"mass" 100
 		"drag" .99
@@ -93,7 +93,7 @@ ship "Lion"
 	attributes
 		category "Heavy Freighter"
 		cost 15000000
-		"shields" 100000
+		"shields" 50000
 		"hull" 3000000
 		"bunks" 154
 		"mass" 100
@@ -137,7 +137,7 @@ ship "Hyena"
 	attributes
 		category "Heavy Freighter"
 		cost 15000000
-		"shields" 100000
+		"shields" 50000
 		"hull" 3000000
 		"bunks" 154
 		"mass" 100
@@ -181,7 +181,7 @@ ship "Leopard"
 	attributes
 		category "Heavy Freighter"
 		cost 15000000
-		"shields" 100000
+		"shields" 50000
 		"hull" 3000000
 		"bunks" 154
 		"mass" 100

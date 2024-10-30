@@ -1,5 +1,5 @@
 mission "First Contact: Gaguka"
-	name "Qoasly to <destination>."
+	name "Qoasly to <destination>"
 	description "Take Qoasly to <destination> by <deadline>. He will pay you <payment>."
 	landing
 	deadline
@@ -383,6 +383,9 @@ mission "Rescue Gaguka"
 					flee
 				`	"Okay!"`
 					accept
+	on decline
+		action
+			"reputation: Gaguka" = -1000
 	on complete
 		payment 1000000
 		conversation

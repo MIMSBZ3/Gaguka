@@ -1098,6 +1098,10 @@ planet Wer-intoe
 	shipyard "Gaguka Ships"
 	outfitter "Gaguka Basics"
 	"required reputation" 1
+	tribute 4200
+		threshold 0
+		fleet "Large Republic" 16
+
 
 planet Van-qoash
 	attributes gaguka
