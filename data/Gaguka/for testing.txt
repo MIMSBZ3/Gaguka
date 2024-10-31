@@ -8,6 +8,14 @@ mission "gaguka colonize yeoash"
 		has "Transport Marnackh 2: done"
 		fail
 
+mission "Invaders"
+	name "Invaders"
+	description "Accepting causes Invaders."
+	job
+	on accept
+		event "Tem-tehy Invaders" 0
+		fail
+
 mission "like a"
 	name "Gaguka like you"
 	description "Gaguka like you."

@@ -27,7 +27,7 @@ start "Gaguka"
 			cost 32000000
 			"shields" 700000
 			"hull" 360000
-			"bunks" 365
+			"bunks" 289
 			"mass" 1000
 			"drag" 1.59
 			"heat dissipation" .27

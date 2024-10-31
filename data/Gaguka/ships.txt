@@ -7,6 +7,7 @@ ship "Giraffe"
 		cost 32000000
 		"shields" 70000
 		"hull" 36000
+		"required crew" 100
 		"bunks" 365
 		"mass" 1000
 		"drag" 1.59
@@ -50,6 +51,7 @@ ship "Elephant"
 		cost 15000000
 		"shields" 50000
 		"hull" 3000000
+		"required crew" 34
 		"bunks" 154
 		"mass" 100
 		"drag" .99
@@ -95,6 +97,7 @@ ship "Lion"
 		cost 15000000
 		"shields" 50000
 		"hull" 3000000
+		"required crew" 34
 		"bunks" 154
 		"mass" 100
 		"drag" .99
@@ -139,6 +142,7 @@ ship "Hyena"
 		cost 15000000
 		"shields" 50000
 		"hull" 3000000
+		"required crew" 34
 		"bunks" 154
 		"mass" 100
 		"drag" .99
@@ -183,6 +187,7 @@ ship "Leopard"
 		cost 15000000
 		"shields" 50000
 		"hull" 3000000
+		"required crew" 34
 		"bunks" 154
 		"mass" 100
 		"drag" .99

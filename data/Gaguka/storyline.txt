@@ -309,8 +309,7 @@ mission "Transport Marnackh 3"
 				depart
 	on complete
 		payment 100000
-		action
-			"reputation: Gaguka" = 1000
+		"reputation: Gaguka" = 1000
 		conversation
 			`You are met by scores of new gaguka cheering for you loudly. As you step of the <ship>, Marnackh hurries you off to a new building. As soon as you enter, Marnackh hands you <payment>. "You are now named "The Helper", <first> <last>!" he informs you.`
 
@@ -319,8 +318,8 @@ event "gaguka: Yeo-mink rename 1"
 mission "Yeo-mink rename"
 	landing
 	source 
-	to offer
 		not planet Yeo-mink
+	to offer
 		has "event: gaguka: Yeo-mink rename 1" 
 	destination Yeo-mink
 	on offer
@@ -335,10 +334,10 @@ mission "Yeo-mink rename"
 					goto great
 			label "not contented"
 			`	"Correct, Helper."`
-			fail
+				fail
 			label great
 			`	"I am glad you like it."`
-			fail
+				fail
 
 event "gaguka: Yeo-mink rename 2"
 	system Tout-yhalo
@@ -367,29 +366,38 @@ mission "Rescue Gaguka"
 	deadline
 	source
 		government Gaguka
-		not planet Men-qaosh
-		not planet Myersting
-	to offer
-		has "Tem-tehy Invaders"
+#		not planet Men-qaosh
+#		not planet Jubint
+#		not planet Myersting
+#	to offer
+#		has "event: Tem-tehy Invaders"
 	destination Jubint
-	passengers 288
-	stopover "Men-qaosh"
-	stopover "Myersting"
+#	passengers 288
+#	stopover "Men-qaosh"
+#	stopover "Myersting"
 	on offer
 		conversation
 			`You recive a hurried message from Qoasly. "Can you head to <stopovers> to pick up the weak of us? The Tem-tehy are invading! Then come to <destination>?`
 			choice
-				`	"How come it's always me who gets me out of you tight situations?"`
-					flee
 				`	"Okay!"`
-					accept
+					launch
+				`	"How come it's always me who gets me out of you tight situations? I won't help any more."`
+					flee
 	on decline
-		action
-			"reputation: Gaguka" = -1000
+		"reputation: Gaguka" = -1000
+	on stopover
+		conversation
+			scene "scene/lightning"
+			`As you load you final 10 passengers on your ship, catastrophe strikes. strange weapons fire down to the ground`
+			choice
+				`	a`
+					depart
+				`	b`
+					depart
 	on complete
 		payment 1000000
 		conversation
-			`	`
+			`	f`
 
 # mission ""
 #	name "."
