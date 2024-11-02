@@ -1078,6 +1078,10 @@ planet Yeo-ash
 	shipyard "Gaguka Ships"
 	outfitter "Gaguka Basics"
 	"required reputation" 1
+	tribute 4200
+		threshold 0
+		fleet "Large Republic" 16
+
 
 planet Jepo
 	attributes gaguka
@@ -1088,6 +1092,10 @@ planet Jepo
 	shipyard "Gaguka Ships"
 	outfitter "Gaguka Basics"
 	"required reputation" 1
+	tribute 4200
+		threshold 0
+		fleet "Large Republic" 16
+
 
 planet Wer-intoe
 	attributes gaguka
@@ -1112,6 +1120,10 @@ planet Van-qoash
 	shipyard "Gaguka Ships"
 	outfitter "Gaguka Basics"
 	"required reputation" 1
+	tribute 4200
+		threshold 0
+		fleet "Large Republic" 16
+
 
 planet Wop-ant
 	attributes gaguka
@@ -1122,6 +1134,10 @@ planet Wop-ant
 	shipyard "Gaguka Ships"
 	outfitter "Gaguka Basics"
 	"required reputation" 1
+	tribute 4200
+		threshold 0
+		fleet "Large Republic" 16
+
 
 planet Men-qaosh
 	attributes gaguka
@@ -1132,6 +1148,10 @@ planet Men-qaosh
 	shipyard "Gaguka Ships"
 	outfitter "Gaguka Basics"
 	"required reputation" 1
+	tribute 4200
+		threshold 0
+		fleet "Large Republic" 16
+
 
 planet Jubint
 	attributes gaguka
@@ -1142,6 +1162,10 @@ planet Jubint
 	shipyard "Gaguka Ships"
 	outfitter "Gaguka Basics"
 	"required reputation" 1
+	tribute 4200
+		threshold 0
+		fleet "Large Republic" 16
+
 
 planet Myersting
 	attributes gaguka
@@ -1153,6 +1177,10 @@ planet Myersting
 	shipyard "Tem-tehy Ships"
 	outfitter "Gaguka Basics"
 	"required reputation" 1
+	tribute 4200
+		threshold 0
+		fleet "Large Republic" 16
+
 
 planet Minkan-wag-onhe
 	attributes tem-tehy

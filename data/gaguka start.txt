@@ -17,6 +17,7 @@ start "Gaguka"
 		credits 5960000000000000000000000000000000000000000000000000000000
 		score 800
 	set "license: Pilot's"
+	set "license: Remnant License"
 	ship "Giraffe"
 		name "Slippery Martin"
 		swizzle 0

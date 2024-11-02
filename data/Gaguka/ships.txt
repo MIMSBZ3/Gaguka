@@ -20,15 +20,15 @@ ship "Giraffe"
 		licenses
 			"Gaguka Offical"
 	outfits
-			Hyperdrive
-			"A860 Atomic Thruster"
-			"A865 Atomic Steering"
-			"Aeon Cell" 3
-			"Crystal Capacitor"
-			"Inhibitor Turret" 4
-			"Large Heat Shunt" 2
-			"AR120 Reverse Thruster" 2
-			"Dragonflame Cannon"
+		Hyperdrive
+		"A860 Atomic Thruster"
+		"A865 Atomic Steering"
+		"Aeon Cell" 3
+		"Crystal Capacitor"
+		"Inhibitor Turret" 4
+		"Large Heat Shunt" 2
+		"AR120 Reverse Thruster" 2
+		"Inhibitor Turret" 4
 	explode "tiny explosion" 60
 	explode "large explosion" 120
 	turret 15 -683
@@ -110,9 +110,12 @@ ship "Lion"
 		"ramscoop" 1
 	outfits
 		Hyperdrive
+		"Large Heat Shunt" 2
 		"A860 Atomic Thruster"
 		"A865 Atomic Steering"
+		"Aeon Cell" 3
 		"AR120 Reverse Thruster" 2
+		"Inhibitor Turret" 4
 	explode "tiny explosion" 6
 	explode "large explosion" 12
 	engine 118 289
@@ -155,8 +158,10 @@ ship "Hyena"
 		"ramscoop" 1
 	outfits
 		Hyperdrive
+		"Large Heat Shunt" 2
 		"A860 Atomic Thruster"
 		"A865 Atomic Steering"
+		"Aeon Cell" 3
 		"AR120 Reverse Thruster" 2
 	explode "tiny explosion" 6
 	explode "large explosion" 12
@@ -200,8 +205,10 @@ ship "Leopard"
 		"ramscoop" 1
 	outfits
 		Hyperdrive
+		"Large Heat Shunt" 2
 		"A860 Atomic Thruster"
 		"A865 Atomic Steering"
+		"Aeon Cell" 3
 		"AR120 Reverse Thruster" 2
 	explode "tiny explosion" 6
 	explode "large explosion" 12

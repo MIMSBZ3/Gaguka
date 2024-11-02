@@ -331,13 +331,8 @@ mission "Yeo-mink rename"
 				`	"Not contented with the old name, huh?"`
 					goto "not contented"
 				`	"That's great!"`
-					goto great
 			label "not contented"
 			`	"Correct, Helper."`
-				fail
-			label great
-			`	"I am glad you like it."`
-				fail
 
 event "gaguka: Yeo-mink rename 2"
 	system Tout-yhalo
@@ -373,8 +368,8 @@ mission "Rescue Gaguka"
 #		has "event: Tem-tehy Invaders"
 	destination Jubint
 #	passengers 288
-#	stopover "Men-qaosh"
-#	stopover "Myersting"
+	stopover "Men-qaosh"
+	stopover "Myersting"
 	on offer
 		conversation
 			`You recive a hurried message from Qoasly. "Can you head to <stopovers> to pick up the weak of us? The Tem-tehy are invading! Then come to <destination>?`

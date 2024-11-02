@@ -36,7 +36,7 @@ fleet "Gaguka"
 	names "gaguka"
 	cargo 3
 	personality
-		heroic opportunistic
+		heroic opportunistic waiting
 	variant
 		"Elephant" 4
 		"Giraffe"
@@ -46,7 +46,7 @@ fleet "Tem-tehy Invaders"
 	names "Tem-tehy"
 	cargo 1
 	personality
-		heroic opportunistic
+		heroic opportunistic waiting
 	variant
 		"Lion"
 		"Hyena" 3

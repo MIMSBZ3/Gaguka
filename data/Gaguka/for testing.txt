@@ -25,3 +25,14 @@ mission "like a"
 	on accept
 		"reputation: Gaguka" = 1000
 		fail
+
+
+mission "like b"
+	name "Tem-tehy like you"
+	description "Tem-tehy like you."
+	job
+	source
+		government Tem-tehy
+	on accept
+		"reputation: Tem-tehy" = 1000
+		fail
