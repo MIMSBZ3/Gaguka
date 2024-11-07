@@ -13,12 +13,12 @@ ship "Giraffe"
 		"drag" 1.59
 		"heat dissipation" .27
 		"fuel capacity" 900
-		"outfit space" 180
+		"outfit space" 1800
 		"weapon capacity" 9800
 		"cargo space" 1000
 		"engine capacity" 219
-		licenses
-			"Gaguka Offical"
+#		licenses
+#			"Gaguka Offical"
 	outfits
 		Hyperdrive
 		"A860 Atomic Thruster"

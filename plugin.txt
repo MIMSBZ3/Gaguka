@@ -1,0 +1,7 @@
+name "Gaguka"
+about "This adds an alien race called the Gaguka, and they have systems a while away in the north-west direction from The Wanderers."
+about "Any help would be greatly appreciated!"
+authors
+	MIMSBZ3
+dependencies
+	"game version" 0.5.1
