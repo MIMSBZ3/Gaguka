@@ -19,3 +19,25 @@ outfit "Mining Destructor"
 		"shield damage" 10.6
 		"hull damage" 6.6
 	description "Although not the most accurate or damaging of weapons, the Energy Blaster is popular because it is small enough to be installed on even the tiniest of ships. One blaster is not enough to do appreciable damage to anything larger than a fighter, but a ship equipped with several of them becomes a force to be reckoned with."
+
+outfit "Rynar Missile"
+	category "Guns"
+	cost 16000
+	thumbnail "thumbnail/rynar missile"
+	"mass" 32
+	"outfit space" -32
+	"weapon capacity" -32
+	"gun ports" -1
+	weapon
+		sprite "projectile/rynar missile"
+		sound "blaster"
+		"hit effect" "blaster impact"
+		"inaccuracy" 3
+		"velocity" 10.625
+		"lifetime" 48
+		"reload" 12
+		"firing energy" 5.8
+		"firing heat" 18
+		"shield damage" 10.6
+		"hull damage" 6.6
+	description " "
