@@ -208,7 +208,7 @@ ship "Leopard"
 		"Large Heat Shunt" 2
 		"A860 Atomic Thruster"
 		"A865 Atomic Steering"
-		"Aeon Cell" 3
+#		"Aeon Cell" 3
 		"AR120 Reverse Thruster" 2
 	explode "tiny explosion" 6
 	explode "large explosion" 12

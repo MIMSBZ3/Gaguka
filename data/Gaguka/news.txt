@@ -1,0 +1,20 @@
+news "Money Gaguka"
+	location
+		near "Niun" 4
+	name
+		word
+			"Wealthy Gaguka"
+			"Poor Gaguka"
+	message
+		word
+			`"Spare `
+			`"Suffer to give `
+			`"Provide `
+		word
+			`a credit `
+		word
+			`to `
+			`for `
+		word
+			`my buisness."`
+			`the job I work for so I can jet more money."`
