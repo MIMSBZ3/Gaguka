@@ -1,20 +1,42 @@
-news "Money Gaguka"
+phrase "Money Gaguka"
+	word
+		`"Spare `
+		`"Suffer to give `
+		`"Provide `
+	word
+		`a credit `
+	word
+		`to `
+		`for `
+	word
+		`my business."`
+		`the job I work for so I can work for more money."`
+
+news "Gaguka"
 	location
-		near "Niun" 4
+		near "Niun" 4	
 	name
 		word
 			"Wealthy Gaguka"
 			"Poor Gaguka"
+			"Suspicious Gaguka"
 	message
-		word
-			`"Spare `
-			`"Suffer to give `
-			`"Provide `
-		word
-			`a credit `
-		word
-			`to `
-			`for `
-		word
-			`my buisness."`
-			`the job I work for so I can jet more money."`
+		phrase
+			"Gaguka"
+
+phrase "Gaguka"
+	phrase
+		"Funny Gaguka"
+		"Money Gaguka"
+
+phrase "Funny Gaguka"
+	word
+		`"Can `
+		`"May `
+	word
+		`I `
+	word
+		`borrow your `
+	word
+		`Laser Rifle?"`
+		`Sidearm?"`
