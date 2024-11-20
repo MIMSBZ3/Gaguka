@@ -22,12 +22,29 @@ news "Gaguka"
 			"Suspicious Gaguka"
 	message
 		phrase
-			"Gaguka"
+			"Gaguka1"
 
-phrase "Gaguka"
+news "Gaguka a"
+	location
+		near "Niun" 4	
+	name
+		word
+			"Wealthy Gaguka"
+			"Poor Gaguka"
+			"Suspicious Gaguka"
+	message
+		phrase
+			"Merchant Gaguka all"
+
+phrase "Gaguka1"
 	phrase
 		"Funny Gaguka"
 		"Money Gaguka"
+
+phrase "Merchant Gaguka all"
+	phrase
+		"Merchant Gaguka1"
+		"Merchant Gaguka"
 
 phrase "Funny Gaguka"
 	word
@@ -40,3 +57,51 @@ phrase "Funny Gaguka"
 	word
 		`Laser Rifle?"`
 		`Sidearm?"`
+
+phrase "Merchant Gaguka1"
+	word
+		`"I've just made a great `
+	word
+		`bit`
+		`lot`
+	word
+		` of money by delivering a delivery to `
+	phrase
+		"Gaguka Planets"
+	word
+		`!"`
+
+phrase "Gaguka Planets"
+	word
+		`Jubint`
+		`Jepo`
+		`Wer-intoe`
+		`Men-qaosh`
+		`Van-qoash`
+		`Wop-ant`
+		`Myersting`
+
+phrase "Jokster Gaguka"
+	word
+		`"What does a `
+	word
+		`Mouse `
+		`Fish `
+		`Squirrel `
+		`Rabbit `
+	word
+		`say to a `
+	word
+		`Bear`
+		`Snake`
+		`Cat`
+		`Aligator`
+	word
+		`?`
+	word
+		`How long till you `
+	word
+		`eat `
+		`demolish `
+	word
+		`me!"`
