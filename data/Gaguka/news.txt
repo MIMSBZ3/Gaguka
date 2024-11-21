@@ -12,7 +12,7 @@ phrase "Money Gaguka"
 		`my business."`
 		`the job I work for so I can work for more money."`
 
-news "Gaguka"
+news "Gaguka a"
 	location
 		near "Niun" 4	
 	name
@@ -24,27 +24,50 @@ news "Gaguka"
 		phrase
 			"Gaguka1"
 
-news "Gaguka a"
+news "Gaguka b"
 	location
 		near "Niun" 4	
 	name
 		word
-			"Wealthy Gaguka"
-			"Poor Gaguka"
-			"Suspicious Gaguka"
+			"Gaguka Merchant"
 	message
 		phrase
-			"Merchant Gaguka all"
+			"Gaguka2"
+
+news "Gaguka c"
+	location
+		near "Niun" 4	
+	name
+		word
+			"Gaguka Jester"
+	message
+		phrase
+			"Gaguka3"
 
 phrase "Gaguka1"
 	phrase
 		"Funny Gaguka"
 		"Money Gaguka"
 
+phrase "Gaguka2"
+	phrase
+		"Merchant Gaguka all"
+
+phrase "Gaguka3"
+	phrase
+		"Jester Gaguka"
+
 phrase "Merchant Gaguka all"
 	phrase
 		"Merchant Gaguka1"
 		"Merchant Gaguka"
+
+phrase "Merchant Gaguka"
+	word
+		`"The best way to get money is to smuggle salt to ${gaguka planets}!"`
+		`"What's the wordscramble hnoir? Do you know? I've crossed the known galaxy thousands of times, but I haven't unscrambled this!"`
+		`"Heavy Metals are in great demand on ${gaguka planets}. You can make a good deal of credits!"`
+		`"It's amazing how many credits you can get by delivering Food and Clothing. I just got about ${number}00,000, by delivering some to ${gaguka planets}!"`
 
 phrase "Funny Gaguka"
 	word
@@ -67,11 +90,23 @@ phrase "Merchant Gaguka1"
 	word
 		` of money by delivering a delivery to `
 	phrase
-		"Gaguka Planets"
+		"gaguka planets"
 	word
 		`!"`
 
-phrase "Gaguka Planets"
+phrase "number"
+	word
+		`9`
+		`8`
+		`7`
+		`6`
+		`5`
+		`4`
+		`3`
+		`2`
+		`1`
+
+phrase "gaguka planets"
 	word
 		`Jubint`
 		`Jepo`
@@ -81,7 +116,7 @@ phrase "Gaguka Planets"
 		`Wop-ant`
 		`Myersting`
 
-phrase "Jokster Gaguka"
+phrase "Jester Gaguka"
 	word
 		`"What does a `
 	word
@@ -97,7 +132,7 @@ phrase "Jokster Gaguka"
 		`Cat`
 		`Aligator`
 	word
-		`?`
+		`? `
 	word
 		`How long till you `
 	word
