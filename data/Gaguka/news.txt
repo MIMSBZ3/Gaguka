@@ -64,10 +64,25 @@ phrase "Merchant Gaguka all"
 
 phrase "Merchant Gaguka"
 	word
-		`"The best way to get money is to smuggle salt to ${gaguka planets}!"`
+		`"Life being a Merchant is getting`
+		`"Hey, do you know which hyperspace link to go into, to fly to ${gaguka systems}"`
+		`"The best way to get money is to take ${goods} to ${gaguka planets}!"`
 		`"What's the wordscramble hnoir? Do you know? I've crossed the known galaxy thousands of times, but I haven't unscrambled this!"`
 		`"Heavy Metals are in great demand on ${gaguka planets}. You can make a good deal of credits!"`
-		`"It's amazing how many credits you can get by delivering Food and Clothing. I just got about ${number}00,000, by delivering some to ${gaguka planets}!"`
+		`"It's amazing how many credits you can get by delivering ${goods} and ${goods}. I just got about ${number}00,000, by delivering some to ${gaguka planets}!"`
+
+phrase "goods"
+	word
+		`Food`
+		`Clothing`
+		`Metal`
+		`Plastics`
+		`Electronics`
+		`Medical`
+		`Industrial`
+		`Equipment`
+		`Heavy Metals`
+		`Luxury Goods`
 
 phrase "Funny Gaguka"
 	word
@@ -116,6 +131,15 @@ phrase "gaguka planets"
 		`Wop-ant`
 		`Myersting`
 
+phrase "gaguka systems"
+	word
+		`Sha-gu?`
+		`Rah-ru?`
+		`Qua-key?`
+		`Thanel-boo?`
+		`Ahh-thu?`
+		`Buin-een?`
+		`Tout-yhalo? I've never been there before.`
 phrase "Jester Gaguka"
 	word
 		`"What does a `

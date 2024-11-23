@@ -303,7 +303,7 @@ mission "Transport Marnackh 3"
 			`Qoasly, once safely in the air, says, "How was the colony when you last left it?"`
 			choice
 				`	"Great!"`
-				`	"Good, but just geting started."`
+				`	"Good, but just getting started."`
 			label great
 			`	"I am glad to hear it," says Qoasly. "It's a three days journey, correct?" You reply, "Correct."`
 				depart
@@ -335,6 +335,10 @@ mission "Yeo-mink rename"
 			`	"Correct, Helper."`
 
 event "gaguka: Yeo-mink rename 2"
+	add phrase "gaguka systems"
+		`Tout-yhalo`
+	add phrase "gaguka planets"
+		`Yeo-ash`
 	system Tout-yhalo
 		remove object Yeo-mink
 			sprite planet/rock4
@@ -361,13 +365,13 @@ mission "Rescue Gaguka"
 	deadline
 	source
 		government Gaguka
-#		not planet Men-qaosh
-#		not planet Jubint
-#		not planet Myersting
-#	to offer
-#		has "event: Tem-tehy Invaders"
+		not planet Men-qaosh
+		not planet Jubint
+		not planet Myersting
+	to offer
+		has "event: Tem-tehy Invaders"
 	destination Jubint
-#	passengers 288
+	passengers 50
 	stopover "Men-qaosh"
 	stopover "Myersting"
 	on offer
