@@ -4,9 +4,12 @@ news "Gaguka d"
 	name
 		word
 			"Angry Gaguka"
+			"Grumpy Gaguka"
+			"Unhappy Gaguka"
 	message
 		word
 			`${Angry Gaguka}`
+			`${Angry Gaguka1}`
 
 phrase "Money Gaguka"
 	word
@@ -22,6 +25,35 @@ phrase "Money Gaguka"
 		`my business."`
 		`the job I work for so I can work for more money."`
 
+phrase "Angry Gaguka1"
+	word
+		`"How `
+	word
+		`many times must I `
+		`much do I have to `
+	word
+		`explain to you `
+		`tell you `
+	word
+		`NOT to eat `
+	word
+		`food `
+		`untasty (now) morsels `
+	word
+		`cooked?"`
+
+phrase "Happy Gaguka"
+	word
+		`"It has been five years since I last had a `
+	word
+		`Antelope`# to be made in the near Future
+		`Elephant`
+		`Zebra`# to be made in the near Future also
+	word
+		`, `
+	word
+		``
+
 phrase "Angry Gaguka"
 	word
 		`"Didn't you steal `
@@ -31,6 +63,10 @@ phrase "Angry Gaguka"
 		`my passengers, you maniac, on ${gaguka planets}`
 	word
 		`, now didn't you?"`
+
+phrase
+	word
+		``
 
 news "Gaguka a"
 	location

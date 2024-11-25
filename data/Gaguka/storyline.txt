@@ -335,10 +335,6 @@ mission "Yeo-mink rename"
 			`	"Correct, Helper."`
 
 event "gaguka: Yeo-mink rename 2"
-	add phrase "gaguka systems"
-		`Tout-yhalo`
-	add phrase "gaguka planets"
-		`Yeo-ash`
 	system Tout-yhalo
 		remove object Yeo-mink
 			sprite planet/rock4

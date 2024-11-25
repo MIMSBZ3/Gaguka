@@ -42,6 +42,98 @@ ship "Giraffe"
 	`reverse engine` 142.5 688.5
 	description "The Giraffe has recently been made, ever since the war with the Tem-tehy has started."
 
+ship "Antelope"
+	swizzle 0
+	sprite "ship/charged"
+	thumbnail "thumbnail/charged"
+	attributes
+		category "Heavy Freighter"
+		cost 15000000
+		"shields" 50000
+		"hull" 3000000
+		"required crew" 34
+		"bunks" 154
+		"mass" 100
+		"drag" .99
+		"heat dissipation" .27
+		"fuel capacity" 600
+		"outfit space" 900
+		"weapon capacity" 5500
+		"cargo space" 100
+		"engine capacity" 1000
+	outfits
+		Hyperdrive
+		"Large Heat Shunt" 2
+		"A860 Atomic Thruster"
+		"A865 Atomic Steering"
+		"Aeon Cell" 3
+		"AR120 Reverse Thruster" 2
+	explode "tiny explosion" 6
+	explode "large explosion" 12
+	engine 118 289
+	engine -118 289
+	gun -77.5 -283
+	gun 77.5 -283
+	turret -25.5 -42
+	turret -30.5 -11
+	turret 25.5 -42
+	turret 30.5 -11
+	`reverse engine` -17.5 -319
+	`reverse engine` 17.5 -319
+	bay Fighter -60 -81
+	bay Fighter -67 -60
+	bay Fighter -71.5 -39
+	bay Fighter 60 -81
+	bay Fighter 67 -60
+	bay Fighter 71.5 -39
+	description "The Elephant has been the longest made ship, going back to the invention of the hyperdrive."
+
+ship "Zebra"
+	swizzle 0
+	sprite "ship/charged"
+	thumbnail "thumbnail/charged"
+	attributes
+		category "Heavy Freighter"
+		cost 15000000
+		"shields" 50000
+		"hull" 3000000
+		"required crew" 34
+		"bunks" 154
+		"mass" 100
+		"drag" .99
+		"heat dissipation" .27
+		"fuel capacity" 600
+		"outfit space" 900
+		"weapon capacity" 5500
+		"cargo space" 100
+		"engine capacity" 1000
+	outfits
+		Hyperdrive
+		"Large Heat Shunt" 2
+		"A860 Atomic Thruster"
+		"A865 Atomic Steering"
+		"Aeon Cell" 3
+		"AR120 Reverse Thruster" 2
+	explode "tiny explosion" 6
+	explode "large explosion" 12
+	engine 118 289
+	engine -118 289
+	gun -77.5 -283
+	gun 77.5 -283
+	turret -25.5 -42
+	turret -30.5 -11
+	turret 25.5 -42
+	turret 30.5 -11
+	`reverse engine` -17.5 -319
+	`reverse engine` 17.5 -319
+	bay Fighter -60 -81
+	bay Fighter -67 -60
+	bay Fighter -71.5 -39
+	bay Fighter 60 -81
+	bay Fighter 67 -60
+	bay Fighter 71.5 -39
+	description "The Elephant has been the longest made ship, going back to the invention of the hyperdrive."
+
 ship "Elephant"
 	swizzle 0
 	sprite "ship/charged"
