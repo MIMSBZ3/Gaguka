@@ -46,6 +46,28 @@ outfit "Rynar Missile"
 		"reload" 12
 		"firing energy" 5.8
 		"firing heat" 18
-		"shield damage" 10.6
-		"hull damage" 6.6
+		"shield damage" 100
+		"hull damage" 54
 	description " "
+
+outfit "Mouzei Shooter"
+	category "Guns"
+	cost 8000
+	thumbnail "thumbnail/mouzei shooter"
+	"mass" 32
+	"outfit space" -32
+	"weapon capacity" -32
+	"gun ports" -1
+	weapon
+		sprite "projectile/rynar missile"
+		sound "destructor"
+		"hit effect" "destructor impact"
+		"inaccuracy" 1
+		"velocity" 10.625
+		"lifetime" 48
+		"reload" 12
+		"firing energy" 5.8
+		"firing heat" 18
+		"shield damage" 89
+		"hull damage" 53
+	description "The Mouzei Shooter was thought up long before the invention of the Hyperdrive. It basicly ignites fuel and shoots it out the front, a little like a afterburner. However, it sends the ship very far backwards."
