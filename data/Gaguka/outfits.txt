@@ -8,7 +8,7 @@ outfit "Mining Destructor"
 	"gun ports" -1
 	weapon
 		sprite "projectile/mining destructor"
-		sound "destructor"
+		sound "mining destructor"
 		"hit effect" "destructor impact"
 		"inaccuracy" 3
 		"velocity" 10.625
@@ -28,14 +28,49 @@ effect "destructor impact"
 	"random angle" 70
 	"velocity scale" -.07
 
+outfit "Rynar Missile Launcher"
+	category "Secondary Weapons"
+	cost 15000
+	thumbnail "outfit/rynar missile launcher"
+	"mass" 10
+	"outfit space" -20
+	"weapon capacity" -17
+	"gun ports" -1
+	"rynar capacity" 40
+	weapon
+		sprite "projectile/meteor"
+			"no repeat"
+			"frame rate" .25
+		sound ""
+		ammo "Rynar Missile"
+		icon "icon/"
+		"fire effect" "meteor fire"
+		"die effect" "missile death"
+		"hit effect" "missile hit"
+		"inaccuracy" 5
+		"velocity" 11
+		"lifetime" 350
+		"reload" 80
+		"firing energy" 1
+		"firing heat" 20
+		"acceleration" 1
+		"drag" .1
+		"turn" 1.8
+		"homing" 1
+		"infrared tracking" .65
+		"shield damage" 360
+		"hull damage" 220
+		"hit force" 330
+		"missile strength" 6
+	description "The Meteor Missile is the cheapest and simplest homing weapon available in human space. Meteors are quickly destroyed by anti-missile systems, and their infrared tracking systems have trouble homing in on targets with low heat levels. Nevertheless, their large warheads can spell doom for poorly-defended targets when the missiles are fired in great numbers."
+
 outfit "Rynar Missile"
-	category "Guns"
+	category "Ammunition"
 	cost 16000
 	thumbnail "thumbnail/rynar missile"
 	"mass" 32
 	"outfit space" -32
 	"weapon capacity" -32
-	"gun ports" -1
 	weapon
 		sprite "projectile/rynar missile"
 		sound "destructor"
@@ -64,10 +99,18 @@ outfit "Mouzei Shooter"
 		"hit effect" "destructor impact"
 		"inaccuracy" 1
 		"velocity" 10.625
-		"lifetime" 48
+		"lifetime" 300
 		"reload" 12
 		"firing energy" 5.8
-		"firing heat" 18
+		"firing fuel" 1.8
+		"firing heat" 61
 		"shield damage" 89
 		"hull damage" 53
+		"heat damage" 32
+		"homing" 2
+		"infrared tracking" .8
+		"missile strength" 5
+		"acceleration" 2
+		"drag" .6
+		"turn" 4
 	description "The Mouzei Shooter was thought up long before the invention of the Hyperdrive. It basicly ignites fuel and shoots it out the front, a little like a afterburner. However, it sends the ship very far backwards."
