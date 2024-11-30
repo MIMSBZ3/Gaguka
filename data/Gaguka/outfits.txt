@@ -31,19 +31,19 @@ effect "destructor impact"
 outfit "Rynar Missile Launcher"
 	category "Secondary Weapons"
 	cost 15000
-	thumbnail "outfit/rynar missile launcher"
+	thumbnail "thumbnail/rynar missile launcher"
 	"mass" 10
 	"outfit space" -20
 	"weapon capacity" -17
 	"gun ports" -1
 	"rynar capacity" 40
 	weapon
-		sprite "projectile/meteor"
+		sprite "projectile/rynar missile"
 			"no repeat"
 			"frame rate" .25
 		sound ""
 		ammo "Rynar Missile"
-		icon "icon/"
+		icon "icon/rynar missile"
 		"fire effect" "meteor fire"
 		"die effect" "missile death"
 		"hit effect" "missile hit"
@@ -62,7 +62,7 @@ outfit "Rynar Missile Launcher"
 		"hull damage" 220
 		"hit force" 330
 		"missile strength" 6
-	description "The Meteor Missile is the cheapest and simplest homing weapon available in human space. Meteors are quickly destroyed by anti-missile systems, and their infrared tracking systems have trouble homing in on targets with low heat levels. Nevertheless, their large warheads can spell doom for poorly-defended targets when the missiles are fired in great numbers."
+	description ""
 
 outfit "Rynar Missile"
 	category "Ammunition"
