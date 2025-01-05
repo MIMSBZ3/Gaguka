@@ -13,7 +13,7 @@ mission "Invaders"
 	description "Accepting causes Invaders."
 	job
 	on accept
-		event "Tem-tehy Invaders" 0
+		event "Rathalan Invaders" 0
 		fail
 
 mission "like a"
@@ -28,11 +28,11 @@ mission "like a"
 
 
 mission "like b"
-	name "Tem-tehy like you"
-	description "Tem-tehy like you."
+	name "Rathalan like you"
+	description "Rathalan like you."
 	job
 	source
-		government Tem-tehy
+		government Rathalan
 	on accept
-		"reputation: Tem-tehy" = 1000
+		"reputation: Rathalan" = 1000
 		fail

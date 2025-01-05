@@ -3,7 +3,7 @@ government Gaguka
 	color 0.706 0.208 0.208
 	"player reputation" 1
 	"attitude toward"
-		Tem-tehy -1000
+		Rathalan -1000
 	"bribe" 0
 
 government "Quarg (Gaguka)"
@@ -22,10 +22,11 @@ government "Quarg (Gaguka)"
 	"friendly hail" "friendly quarg"
 	"friendly disabled hail" "friendly quarg"
 
-government Tem-tehy
+government "Rathalan (Gaguka)"
+	"display name" Rathalan
 	swizzle 23
-	color 0.482 0.047 0.18
-	"player reputation" -100
+	color 0.569 0.176 0.353
+	"player reputation" -1000
 	"attitude toward"
 		Gaguka -1000
 	"bribe" 0

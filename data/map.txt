@@ -1174,7 +1174,7 @@ planet Myersting
 	spaceport "To be done."
 	government Gaguka
 	shipyard "Gaguka Ships"
-	shipyard "Tem-tehy Ships"
+	shipyard "Rathalan Ships"
 	outfitter "Gaguka Basics"
 	"required reputation" 1
 	tribute 4200
@@ -1183,26 +1183,26 @@ planet Myersting
 
 
 planet Minkan-wag-onhe
-	attributes tem-tehy
+	attributes Rathalan
 	landscape land/wilderness1
 	description "To be done."
 	spaceport "To be done."
 	government Gaguka
-	shipyard "Tem-tehy Ships"
+	shipyard "Rathalan Ships"
 	outfitter "Gaguka Basics"
 
 planet Ma-chu-ta-ta-te
-	attributes tem-tehy
+	attributes Rathalan
 	landscape land/wilderness0
 	description "To be done."
 	spaceport "To be done."
 	government Gaguka
-	shipyard "Tem-tehy Ships"
+	shipyard "Rathalan Ships"
 	outfitter "Gaguka Basics"
 
 system Ren-tivb
 	pos -1121 -2001
-	government Tem-tehy
+	government Rathalan
 	habitable 1498.541
 	belt 1849 4
 	belt 2210 7
@@ -1280,7 +1280,7 @@ system Ren-tivb
 
 system Trab-hak
 	pos -1207 -2032
-	government Tem-tehy
+	government Rathalan
 	habitable 7900
 	belt 1512
 	link Ren-tivb

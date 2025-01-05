@@ -28,6 +28,14 @@ effect "destructor impact"
 	"random angle" 70
 	"velocity scale" -.07
 
+effect "rynar missile hit"
+	sprite "effect/destructor impact"
+		"rewind"
+		"frame rate" 48
+	"lifetime" 56
+	"random angle" 70
+	"velocity scale" -.07
+
 outfit "Rynar Missile Launcher"
 	category "Secondary Weapons"
 	cost 15000
@@ -62,7 +70,7 @@ outfit "Rynar Missile Launcher"
 		"hull damage" 220
 		"hit force" 330
 		"missile strength" 6
-	description ""
+	description "The Rynar Missile Launcher is the Launcher for the indestructible Rynar Missile. Although "
 
 outfit "Rynar Missile"
 	category "Ammunition"
@@ -83,7 +91,7 @@ outfit "Rynar Missile"
 		"firing heat" 18
 		"shield damage" 100
 		"hull damage" 54
-	description " "
+	description "Before they invented the Hyperdrive, the Gaguka had wars with each other. Allthough everything else is out of date by millennia, the Rynar Missile and its Launcher are still being improved."
 
 outfit "Mouzei Shooter"
 	category "Guns"

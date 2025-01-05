@@ -41,9 +41,9 @@ fleet "Gaguka"
 		"Elephant" 4
 		"Giraffe"
 
-fleet "Tem-tehy Invaders"
-	government Tem-tehy
-	names "Tem-tehy"
+fleet "Rathalan Invaders"
+	government Rathalan
+	names "Rathalan"
 	cargo 1
 	personality
 		heroic opportunistic waiting

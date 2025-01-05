@@ -40,7 +40,7 @@ ship "Giraffe"
 	`reverse engine` -106.5 688
 	engine 142.5 688.5
 	`reverse engine` 142.5 688.5
-	description "The Giraffe has recently been made, ever since the war with the Tem-tehy has started."
+	description "The Giraffe has recently been made, ever since the war with the Rathalan has started."
 
 ship "Antelope"
 	swizzle 0
