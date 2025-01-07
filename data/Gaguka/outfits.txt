@@ -22,19 +22,15 @@ outfit "Mining Destructor"
 
 effect "destructor impact"
 	sprite "effect/destructor impact"
-		"rewind"
-		"frame rate" 48
 	"lifetime" 56
 	"random angle" 70
 	"velocity scale" -.07
 
 effect "rynar missile hit"
 	sprite "effect/destructor impact"
-		"rewind"
-		"frame rate" 48
-	"lifetime" 56
-	"random angle" 70
-	"velocity scale" -.07
+	"lifetime" 62
+	"random angle" 28
+	"velocity scale" -.17
 
 outfit "Rynar Missile Launcher"
 	category "Secondary Weapons"
@@ -69,7 +65,7 @@ outfit "Rynar Missile Launcher"
 		"shield damage" 360
 		"hull damage" 220
 		"hit force" 330
-		"missile strength" 6
+		"missile strength" 100
 	description "The Rynar Missile Launcher is the Launcher for the indestructible Rynar Missile. Although "
 
 outfit "Rynar Missile"
@@ -90,7 +86,7 @@ outfit "Rynar Missile"
 		"firing energy" 5.8
 		"firing heat" 18
 		"shield damage" 100
-		"hull damage" 54
+		"hull damage" 100
 	description "Before they invented the Hyperdrive, the Gaguka had wars with each other. Allthough everything else is out of date by millennia, the Rynar Missile and its Launcher are still being improved."
 
 outfit "Mouzei Shooter"
